@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import { add } from '../src/main.js'
+import { main } from '../src/main.js'
 
-console.log(add(1, 2))
+const result = await main()
+console.log(result.bucketsYear['2016'])
