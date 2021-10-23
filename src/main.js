@@ -1,29 +1,30 @@
 import path from 'path'
-import { URL } from 'url'
 
 import { getAllFiles } from './utils/fs.js'
 import { convertToJson } from './utils/yaml-parser.js'
+import { getEvents } from './utils/md-formatter.js'
 
-// const __dirname = new URL('.', import.meta.url).pathname
 const __dirname = process.cwd()
-console.log(__dirname)
 
 async function getEntriesByBuckets(entries) {
-  const bucketsAll = []
   const bucketsYear = {}
-  const bucketsType = {}
-  const bucketsLanguage = {}
-  const bucketsCountry = {}
+  // const bucketsAll = []
+  // const bucketsType = {}
+  // const bucketsLanguage = {}
+  // const bucketsCountry = {}
 
   for (const entry of entries) {
     const { attributes } = entry
-    const { date, type, language, country } = attributes
+    const { date } = attributes
 
     const year = new Date(date).getFullYear()
     if (bucketsYear[year] === undefined) {
-      bucketsYear[year] = [entry]
+      bucketsYear[year] = {
+        year: year,
+        items: [entry]
+      }
     } else {
-      bucketsYear[year].push(entry)
+      bucketsYear[year].items.push(entry)
     }
   }
 
@@ -32,7 +33,7 @@ async function getEntriesByBuckets(entries) {
   }
 }
 
-export async function main() {
+export async function generateGigs() {
   const directoryPath = path.join(__dirname, 'pages')
   const allFiles = await getAllFiles(directoryPath)
 
@@ -43,5 +44,6 @@ export async function main() {
   }
 
   const entriesByBucket = await getEntriesByBuckets(entries)
-  return entriesByBucket
+  const entriesForYearMarkdown = getEvents(entriesByBucket.bucketsYear)
+  return entriesForYearMarkdown
 }

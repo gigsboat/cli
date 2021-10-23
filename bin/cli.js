@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { main } from '../src/main.js'
+import { generateGigs } from '../src/main.js'
 
-const result = await main()
-console.log(result.bucketsYear['2016'])
+const result = await generateGigs()
+console.log(result)
