@@ -53,7 +53,7 @@ function eventsListForYear(eventsOfYear) {
       Event: event.attributes.name,
       Title: event.attributes.title,
       Slides: event.attributes.slides_url
-        ? `[Slides](${event.attributes.slides_url}`
+        ? `[Slides](${event.attributes.slides_url})`
         : '',
       Recording: event.attributes.recording_url
         ? `[Recording](${event.attributes.recording_url})`
