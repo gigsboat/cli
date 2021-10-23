@@ -1,16 +1,10 @@
 #!/usr/bin/env node
-import { readFile } from 'fs/promises'
+import { readFile, writeFile } from 'fs/promises'
 import path from 'path'
 import { generateGigs } from '../src/main.js'
 import { formatToMarkdown } from '../src/utils/md-formatter.js'
 
-const __dirname = process.cwd()
-const jsonConfigFileContents = await readFile(
-  path.join(__dirname, 'gigsboat.json'),
-  'utf8'
-)
-const gigsConfig = JSON.parse(jsonConfigFileContents)
-
+const gigsConfig = await getConfig()
 const gigsMarkdown = await generateGigs()
 
 let markdownOutputPreContent = ''
@@ -27,7 +21,16 @@ if (gigsConfig.hasOwnProperty('postContent')) {
 markdownOutput +=
   markdownOutputPreContent + gigsMarkdown + markdownOutputPostContent
 
-console.log(markdownOutput)
+processOutput()
+
+async function processOutput() {
+  const __dirname = process.cwd()
+  if (gigsConfig.hasOwnProperty('outputFile')) {
+    await writeFile(path.join(__dirname, gigsConfig.outputFile), markdownOutput)
+  } else {
+    console.log(markdownOutput)
+  }
+}
 
 function processCustomContent(contents) {
   let markdownContent = ''
@@ -42,4 +45,16 @@ function processCustomContent(contents) {
   }
 
   return markdownContent
+}
+
+async function getConfig() {
+  const configFileName = 'gigsboat.json'
+  const __dirname = process.cwd()
+  const jsonConfigFileContents = await readFile(
+    path.join(__dirname, configFileName),
+    'utf8'
+  )
+  const gigsConfig = JSON.parse(jsonConfigFileContents)
+
+  return gigsConfig
 }
