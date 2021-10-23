@@ -2,7 +2,7 @@ import path from 'path'
 
 import { getAllFiles } from './utils/fs.js'
 import { convertToJson } from './utils/yaml-parser.js'
-import { getEvents } from './utils/md-formatter.js'
+import { getEventsMd } from './utils/md-formatter.js'
 
 const __dirname = process.cwd()
 
@@ -44,6 +44,6 @@ export async function generateGigs() {
   }
 
   const entriesByBucket = await getEntriesByBuckets(entries)
-  const entriesForYearMarkdown = getEvents(entriesByBucket.bucketsYear)
+  const entriesForYearMarkdown = getEventsMd(entriesByBucket.bucketsYear)
   return entriesForYearMarkdown
 }

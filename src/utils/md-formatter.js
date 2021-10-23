@@ -1,13 +1,32 @@
 import json2md from 'json2md'
 
-export function getEvents(events) {
+export function getEventsMd(events) {
   let markdownEventsContent = ''
   for (const year of Object.keys(events)) {
     const eventsByYear = eventsListForYear(events[year])
     markdownEventsContent += eventsByYear + '\n'
   }
 
-  return markdownEventsContent
+  const markdown = getTableOfContents(events) + '\n' + markdownEventsContent
+  return markdown
+}
+
+function getTableOfContents(events) {
+  const tableOfContents = []
+  tableOfContents.push({
+    h1: 'Table of Contents'
+  })
+
+  const markdownYearsItems = []
+  for (const year of Object.keys(events)) {
+    markdownYearsItems.push(`[Events in ${year}](#${year})`)
+  }
+
+  tableOfContents.push({
+    ul: markdownYearsItems
+  })
+
+  return json2md(tableOfContents)
 }
 
 function eventsListForYear(eventsOfYear) {
