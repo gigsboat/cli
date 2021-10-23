@@ -2,7 +2,7 @@
 import { readFile } from 'fs/promises'
 import path from 'path'
 import { generateGigs } from '../src/main.js'
-import json2md from 'json2md'
+import { formatToMarkdown } from '../src/utils/md-formatter.js'
 
 const __dirname = process.cwd()
 const jsonConfigFileContents = await readFile(
@@ -13,21 +13,33 @@ const gigsConfig = JSON.parse(jsonConfigFileContents)
 
 const gigsMarkdown = await generateGigs()
 
+let markdownOutputPreContent = ''
+let markdownOutputPostContent = ''
 let markdownOutput = ''
-for (const [hook, contents] of Object.entries(gigsConfig)) {
-  if (hook === 'preContent') {
-    for (const content of contents) {
-      if (content.hasOwnProperty('raw')) {
-        markdownOutput += content.raw + '\n'
-      }
 
-      if (content.hasOwnProperty('format')) {
-        markdownOutput += json2md(content.format) + '\n'
-      }
+if (gigsConfig.hasOwnProperty('preContent')) {
+  markdownOutputPreContent = processCustomContent(gigsConfig.preContent)
+}
+if (gigsConfig.hasOwnProperty('postContent')) {
+  markdownOutputPostContent = processCustomContent(gigsConfig.postContent)
+}
+
+markdownOutput +=
+  markdownOutputPreContent + gigsMarkdown + markdownOutputPostContent
+
+console.log(markdownOutput)
+
+function processCustomContent(contents) {
+  let markdownContent = ''
+  for (const content of contents) {
+    if (content.hasOwnProperty('raw')) {
+      markdownContent += content.raw + '\n'
+    }
+
+    if (content.hasOwnProperty('format')) {
+      markdownContent += formatToMarkdown(content.format) + '\n'
     }
   }
 
-  markdownOutput += gigsMarkdown + '\n'
+  return markdownContent
 }
-
-console.log(markdownOutput)

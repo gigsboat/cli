@@ -1,5 +1,9 @@
 import json2md from 'json2md'
 
+export function formatToMarkdown(data) {
+  return json2md(data)
+}
+
 export function getEventsMd(events) {
   let markdownEventsContent = ''
   for (const year of Object.keys(events)) {
@@ -76,5 +80,5 @@ function eventsListForYear(eventsOfYear) {
     }
   })
 
-  return json2md(eventsByYear)
+  return json2md(eventsByYear) + '\n'
 }
