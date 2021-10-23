@@ -2,12 +2,47 @@ import path from 'path'
 
 import { getAllFiles } from './utils/fs.js'
 import { convertToJson } from './utils/yaml-parser.js'
-import { getEventsMd } from './utils/md-formatter.js'
-import json2md from 'json2md'
+import { getEventsMd, formatToMarkdown } from './utils/md-formatter.js'
 
 const __dirname = process.cwd()
 
-export { json2md, generateGigs }
+export { formatToMarkdown, generateGigs, generateDocument }
+
+async function generateDocument({ preContent, postContent }) {
+  let markdownOutputPreContent = ''
+  let markdownOutputPostContent = ''
+  let document = ''
+
+  const eventsMarkdown = await generateGigs()
+
+  if (preContent) {
+    markdownOutputPreContent = processCustomContent(preContent)
+  }
+
+  if (postContent) {
+    markdownOutputPostContent = processCustomContent(postContent)
+  }
+
+  document +=
+    markdownOutputPreContent + eventsMarkdown + markdownOutputPostContent
+
+  return document
+}
+
+function processCustomContent(contents) {
+  let markdownContent = ''
+  for (const content of contents) {
+    if (content.hasOwnProperty('raw')) {
+      markdownContent += content.raw + '\n'
+    }
+
+    if (content.hasOwnProperty('format')) {
+      markdownContent += formatToMarkdown(content.format) + '\n'
+    }
+  }
+
+  return markdownContent
+}
 
 async function generateGigs() {
   const directoryPath = path.join(__dirname, 'pages')
