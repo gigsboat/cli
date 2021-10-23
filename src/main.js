@@ -3,8 +3,26 @@ import path from 'path'
 import { getAllFiles } from './utils/fs.js'
 import { convertToJson } from './utils/yaml-parser.js'
 import { getEventsMd } from './utils/md-formatter.js'
+import json2md from 'json2md'
 
 const __dirname = process.cwd()
+
+export { json2md, generateGigs }
+
+async function generateGigs() {
+  const directoryPath = path.join(__dirname, 'pages')
+  const allFiles = await getAllFiles(directoryPath)
+
+  const entries = []
+  for (const filePath of allFiles) {
+    const json = await convertToJson(filePath)
+    entries.push(json)
+  }
+
+  const entriesByBucket = await getEntriesByBuckets(entries)
+  const entriesForYearMarkdown = getEventsMd(entriesByBucket.bucketsYear)
+  return entriesForYearMarkdown
+}
 
 async function getEntriesByBuckets(entries) {
   const bucketsYear = {}
@@ -31,19 +49,4 @@ async function getEntriesByBuckets(entries) {
   return {
     bucketsYear
   }
-}
-
-export async function generateGigs() {
-  const directoryPath = path.join(__dirname, 'pages')
-  const allFiles = await getAllFiles(directoryPath)
-
-  const entries = []
-  for (const filePath of allFiles) {
-    const json = await convertToJson(filePath)
-    entries.push(json)
-  }
-
-  const entriesByBucket = await getEntriesByBuckets(entries)
-  const entriesForYearMarkdown = getEventsMd(entriesByBucket.bucketsYear)
-  return entriesForYearMarkdown
 }
