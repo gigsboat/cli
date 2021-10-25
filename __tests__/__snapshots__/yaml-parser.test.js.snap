@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`convert markdown file to json 1`] = `
+Object {
+  "attributes": Object {
+    "city": "Ra'anana",
+    "country": "Israel",
+    "country_code": "IL",
+    "date": 2020-02-18T00:00:00.000Z,
+    "images": Array [
+      "https://pbs.twimg.com/media/EO8sCpbWAAAUAw0?format=jpg&name=4096x4096",
+    ],
+    "language": "English",
+    "name": "SAP Labs dkom 2020 Israel",
+    "recognitions": Object {
+      "twitter": Array [
+        "https://twitter.com/liran_tal/status/1220242496703385600?s=20",
+      ],
+    },
+    "recording_url": null,
+    "slides_url": null,
+    "tags": "post",
+    "title": "The State of Open Source Security",
+    "type": "conference",
+    "url": null,
+  },
+  "body": "",
+  "bodyBegin": 20,
+  "frontmatter": "date: 2020-02-18
+tags: post
+name: SAP Labs dkom 2020 Israel
+url:
+type: conference
+title: The State of Open Source Security
+slides_url:
+recording_url:
+city: Ra'anana
+country: Israel
+country_code: IL
+language: English
+recognitions:
+  twitter:
+    - https://twitter.com/liran_tal/status/1220242496703385600?s=20
+images:
+  - https://pbs.twimg.com/media/EO8sCpbWAAAUAw0?format=jpg&name=4096x4096",
+}
+`;

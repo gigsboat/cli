@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`convert json object to markdown formatting 1`] = `
+"# great title
+
+
+and my paragraph is cool
+"
+`;
+
+exports[`process events json data to provide a complete markdown document 1`] = `
+"# Table of Contents
+
+
+ - [Events in 2016](#2016)
+ - [Events in 2021](#2021)
+
+# 2016
+
+
+[1] total events for 2016
+
+| Date | Event | Title | Slides | Recording | Location | Language |
+| ---- | ----- | ----- | ------ | --------- | -------- | -------- |
+| 2016-1-1 | name | title | [Slides](https://example.com) | [Recording](https://example.com) | US |  |
+
+
+# 2021
+
+
+[2] total events for 2021
+
+| Date | Event | Title | Slides | Recording | Location | Language |
+| ---- | ----- | ----- | ------ | --------- | -------- | -------- |
+| 2021-2-1 | name | title | [Slides](https://example.com) |  |  | English |
+| 2021-2-2 | name | title |  | [Recording](https://example.com) | US | English |
+
+
+"
+`;

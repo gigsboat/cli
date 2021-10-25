@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`given a directory of markdown files a full document is rendered 1`] = `
+"# Table of Contents
+
+
+
+"
+`;
+
+exports[`given a directory of markdown files a full document is rendered along with pre and post content 1`] = `
+"<p> actual html is allowed too </p>
+
+Liran Tal
+
+# Table of Contents
+
+
+
+<p align=\\"center\\"> rendered in postcontent </p>
+
+Thank you!
+
+"
+`;
