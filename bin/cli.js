@@ -3,10 +3,12 @@ import { getConfig } from './config-manager.js'
 import { processOutput } from './output-handler.js'
 import { generateDocument } from '../src/main.js'
 
-const gigsConfig = await getConfig()
+let gigsConfig = await getConfig()
+
 const document = await generateDocument({
-  preContent: gigsConfig?.preContent,
-  postContent: gigsConfig?.postContent
+  sourceDirectory: gigsConfig.input.sourceDirectory,
+  preContent: gigsConfig.preContent,
+  postContent: gigsConfig.postContent
 })
 
-processOutput({ document, outputFile: gigsConfig?.outputFile })
+await processOutput({ document, outputFile: gigsConfig.output.markdownFile })

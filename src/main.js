@@ -4,16 +4,14 @@ import { getAllFiles } from './utils/fs.js'
 import { convertToJson } from './utils/yaml-parser.js'
 import { getEventsMd, formatToMarkdown } from './utils/md-formatter.js'
 
-const __dirname = process.cwd()
-
 export { formatToMarkdown, generateGigs, generateDocument }
 
-async function generateDocument({ preContent, postContent }) {
+async function generateDocument({ sourceDirectory, preContent, postContent }) {
   let markdownOutputPreContent = ''
   let markdownOutputPostContent = ''
   let document = ''
 
-  const eventsMarkdown = await generateGigs()
+  const eventsMarkdown = await generateGigs({ sourceDirectory })
 
   if (preContent) {
     markdownOutputPreContent = processCustomContent(preContent)
@@ -44,12 +42,16 @@ function processCustomContent(contents) {
   return markdownContent
 }
 
-async function generateGigs() {
-  const directoryPath = path.join(__dirname, 'pages')
-  const allFiles = await getAllFiles(directoryPath)
+async function generateGigs({ sourceDirectory }) {
+  let directoryPath = path.join(process.cwd(), sourceDirectory)
+  if (path.isAbsolute(sourceDirectory)) {
+    directoryPath = sourceDirectory
+  }
+
+  const allFilesFlatList = await getAllFiles(directoryPath)
 
   const entries = []
-  for (const filePath of allFiles) {
+  for (const filePath of allFilesFlatList) {
     const json = await convertToJson(filePath)
     entries.push(json)
   }

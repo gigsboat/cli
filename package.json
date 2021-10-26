@@ -70,6 +70,7 @@
     "prettier": "^2.4.1"
   },
   "jest": {
+    "transform": {},
     "testEnvironment": "node",
     "verbose": true,
     "collectCoverage": true,
