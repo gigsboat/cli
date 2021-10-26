@@ -48,19 +48,8 @@ Use the `gigsboat` CLI to manage them all!
 # Install
 
 ```bash
-npm add @gigsboat/cli
+npx @gigsboat/cli
 ```
-
-# Usage
-
-```js
-// @TODO
-const {} = require("@gigsboat/cli");
-```
-
-# Example
-
-<!-- TODO -->
 
 # Contributing
 
