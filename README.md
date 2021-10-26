@@ -33,10 +33,13 @@ That is... until you started using gigsboat ⛵️ 🎉
 
 ## Why gigsboat?
 
-✅ You own your data - do you use a 3rd-party app, or tool to manage your talks? Maybe a Trello board? With gigsboat, you own and manage your data via YAML files, and gigsboat is here to help you transform that into a beautiful Markdown page.
-✅ It's all open source - Well, gigsboat is open source but also all of your speaking activities, they're all open source and all managed right here in GitHub where it's easy to manage your talks, just like you manage your code projects. It's all transparent and you can share it with your friends, conference organizers, and so on.
-✅ Zero config - just run the CLI tool and it'll automatically detect source files, and generate a Markdown document for you with all of them.
-✅ Statistics - gigsboat runs some numbers crunching and gives you stats about your speaking engagements!
+- ✅ You own your data - do you use a 3rd-party app, or tool to manage your talks? Maybe a Trello board? With gigsboat, you own and manage your data via YAML files, and gigsboat is here to help you transform that into a beautiful Markdown page.
+
+- ✅ It's all open source - Well, gigsboat is open source but also all of your speaking activities, they're all open source and all managed right here in GitHub where it's easy to manage your talks, just like you manage your code projects. It's all transparent and you can share it with your friends, conference organizers, and so on.
+
+- ✅ Zero config - just run the CLI tool and it'll automatically detect source files, and generate a Markdown document for you with all of them.
+
+- ✅ Statistics - gigsboat runs some numbers crunching and gives you stats about your speaking engagements!
 
 # How to get started?
 
