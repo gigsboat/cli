@@ -1,5 +1,6 @@
 import { getConfig } from '../bin/config-manager.js'
 import { promises as fs } from 'fs'
+// eslint-disable-next-line node/no-extraneous-import
 import { jest } from '@jest/globals'
 
 test('returns the result of a config file', async () => {
