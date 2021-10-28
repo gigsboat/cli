@@ -22,7 +22,7 @@
   <a href="./SECURITY.md"><img src="https://img.shields.io/badge/Security-Responsible%20Disclosure-yellow.svg" alt="Responsible Disclosure Policy" /></a>
 </p>
 
-# Gigsboat
+# About
 
 - Are you a Developer Advocate 🥑 ?
 - Enjoy doing conference talks, meetups presentations, or joining a podcast?
