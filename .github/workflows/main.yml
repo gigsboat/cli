@@ -29,6 +29,7 @@ jobs:
   release:
     name: do semantic release
     runs-on: 'ubuntu-latest'
+    environment: publish
     needs: build
     steps:
       - uses: actions/checkout@v1
@@ -38,7 +39,7 @@ jobs:
       - name: install dependencies
         run: yarn install --frozen-lockfile --ignore-engines
       - name: release
-        run: npm run semantic-release
+        run: npx run semantic-release
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
