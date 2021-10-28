@@ -206,7 +206,5 @@
     ],
     "@semantic-release/github"
   ],
-  "private": {
-    false
-  }
+  "private": false
 }
