@@ -46,6 +46,16 @@ Even more reasons to use Gigsboat:
 
 - **Statistics** - gigsboat runs some numbers crunching and gives you stats about your speaking engagements!
 
+# How does it work?
+
+1. You run the CLI
+2. It finds your events' data files
+3. It parses them into JSON
+4. It extracts, and sorts the data in all kinds of way
+5. Exports the JSON into Markdown format
+6. Results are printed to STDOUT or to a `README.md` file
+7. You now have a fancy looking Markdown document that lists all of your events
+
 # How to get started?
 
 ## Starting from scratch
