@@ -58,7 +58,15 @@ Even more reasons to use Gigsboat:
 
 # How to get started?
 
-## Starting from scratch
+## Option 1: Zero-to-Hero in a heartbeat!
+
+We have a template repository for you to get started in a matter of seconds! 🚤
+
+Head over to the [gigs-template](https://github.com/gigsboat/gigs-template) repository which we created as a template for you to quickly get started. It's just a few steps, and you can start tracking all of your speaking engagements.
+
+If you would like to know the gritty details of how the gigsboat CLI works, continue to read for the _starting from scratch_ section.
+
+## Option 2: Starting from scratch
 
 If you're just getting started tracking your events and you don't have any actual data files that hold the history of your events (or your upcoming events), then this section is for you.
 
