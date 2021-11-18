@@ -14,8 +14,8 @@ test('convert json object to markdown formatting', async () => {
 })
 
 test('process events json data to provide a complete markdown document', () => {
-  const events = {
-    2016: {
+  const events = [
+    {
       year: 2016,
       items: [
         {
@@ -31,7 +31,7 @@ test('process events json data to provide a complete markdown document', () => {
         }
       ]
     },
-    2021: {
+    {
       year: 2021,
       items: [
         {
@@ -58,7 +58,7 @@ test('process events json data to provide a complete markdown document', () => {
         }
       ]
     }
-  }
+  ]
 
   const markdown = getEventsMd(events)
   expect(markdown).toMatchSnapshot()

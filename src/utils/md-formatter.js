@@ -6,8 +6,8 @@ export function formatToMarkdown(data) {
 
 export function getEventsMd(events) {
   let markdownEventsContent = ''
-  for (const year of Object.keys(events)) {
-    const eventsByYear = eventsListForYear(events[year])
+  for (const yearlyItems of events) {
+    const eventsByYear = eventsListForYear(yearlyItems)
     markdownEventsContent += eventsByYear + '\n'
   }
 
@@ -22,8 +22,10 @@ function getTableOfContents(events) {
   })
 
   const markdownYearsItems = []
-  for (const year of Object.keys(events)) {
-    markdownYearsItems.push(`[Events in ${year}](#${year})`)
+  for (const yearlyItems of events) {
+    markdownYearsItems.push(
+      `[Events in ${yearlyItems.year}](#${yearlyItems.year})`
+    )
   }
 
   tableOfContents.push({
