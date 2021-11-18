@@ -4,19 +4,8 @@ exports[`given a directory of markdown files a full document is rendered 1`] = `
 "# Table of Contents
 
 
- - [Events in 2019](#2019)
  - [Events in 2021](#2021)
-
-# 2019
-
-
-[2] total events for 2019
-
-| Date | Event | Title | Slides | Recording | Location | Language |
-| ---- | ----- | ----- | ------ | --------- | -------- | -------- |
-| 2019-9-12 | APIdays Barcelona | Consumer-Driven Contracts: A better approach for API Testing | [Slides](https://slides.com/lirantal/consumer-driven-contracts) | [Recording](https://www.youtube.com/watch?v=zfGKX5iKSis&list=PLmEaqnTJ40Oqo9VlbcUakVmFZgx5weLrs&index=25&t=141s&ab_channel=apidays) | ES | English |
-| 2019-9-27 | JSConf Budapest | StrangerDanger: Finding Security Vulnerabilities Before They Find You! |  | [Recording](https://www.youtube.com/watch?v=3H8pF6yoSgU&list=PL37ZVnwpeshEMCvdYDdZ09Sy-toTftWu0&index=15&ab_channel=JSConf) | HU | English |
-
+ - [Events in 2019](#2019)
 
 # 2021
 
@@ -26,6 +15,17 @@ exports[`given a directory of markdown files a full document is rendered 1`] = `
 | Date | Event | Title | Slides | Recording | Location | Language |
 | ---- | ----- | ----- | ------ | --------- | -------- | -------- |
 | 2021-7-21 | Cyber Week | Are We Forever Doomed By Software Supply Chain Risks? |  | [Recording](https://www.youtube.com/watch?v=x74sMCaZKbg&ab_channel=Snyk) | IL | English |
+
+
+# 2019
+
+
+[2] total events for 2019
+
+| Date | Event | Title | Slides | Recording | Location | Language |
+| ---- | ----- | ----- | ------ | --------- | -------- | -------- |
+| 2019-9-27 | JSConf Budapest | StrangerDanger: Finding Security Vulnerabilities Before They Find You! |  | [Recording](https://www.youtube.com/watch?v=3H8pF6yoSgU&list=PL37ZVnwpeshEMCvdYDdZ09Sy-toTftWu0&index=15&ab_channel=JSConf) | HU | English |
+| 2019-9-12 | APIdays Barcelona | Consumer-Driven Contracts: A better approach for API Testing | [Slides](https://slides.com/lirantal/consumer-driven-contracts) | [Recording](https://www.youtube.com/watch?v=zfGKX5iKSis&list=PLmEaqnTJ40Oqo9VlbcUakVmFZgx5weLrs&index=25&t=141s&ab_channel=apidays) | ES | English |
 
 
 "
@@ -39,19 +39,8 @@ Liran Tal
 # Table of Contents
 
 
- - [Events in 2019](#2019)
  - [Events in 2021](#2021)
-
-# 2019
-
-
-[2] total events for 2019
-
-| Date | Event | Title | Slides | Recording | Location | Language |
-| ---- | ----- | ----- | ------ | --------- | -------- | -------- |
-| 2019-9-12 | APIdays Barcelona | Consumer-Driven Contracts: A better approach for API Testing | [Slides](https://slides.com/lirantal/consumer-driven-contracts) | [Recording](https://www.youtube.com/watch?v=zfGKX5iKSis&list=PLmEaqnTJ40Oqo9VlbcUakVmFZgx5weLrs&index=25&t=141s&ab_channel=apidays) | ES | English |
-| 2019-9-27 | JSConf Budapest | StrangerDanger: Finding Security Vulnerabilities Before They Find You! |  | [Recording](https://www.youtube.com/watch?v=3H8pF6yoSgU&list=PL37ZVnwpeshEMCvdYDdZ09Sy-toTftWu0&index=15&ab_channel=JSConf) | HU | English |
-
+ - [Events in 2019](#2019)
 
 # 2021
 
@@ -61,6 +50,17 @@ Liran Tal
 | Date | Event | Title | Slides | Recording | Location | Language |
 | ---- | ----- | ----- | ------ | --------- | -------- | -------- |
 | 2021-7-21 | Cyber Week | Are We Forever Doomed By Software Supply Chain Risks? |  | [Recording](https://www.youtube.com/watch?v=x74sMCaZKbg&ab_channel=Snyk) | IL | English |
+
+
+# 2019
+
+
+[2] total events for 2019
+
+| Date | Event | Title | Slides | Recording | Location | Language |
+| ---- | ----- | ----- | ------ | --------- | -------- | -------- |
+| 2019-9-27 | JSConf Budapest | StrangerDanger: Finding Security Vulnerabilities Before They Find You! |  | [Recording](https://www.youtube.com/watch?v=3H8pF6yoSgU&list=PL37ZVnwpeshEMCvdYDdZ09Sy-toTftWu0&index=15&ab_channel=JSConf) | HU | English |
+| 2019-9-12 | APIdays Barcelona | Consumer-Driven Contracts: A better approach for API Testing | [Slides](https://slides.com/lirantal/consumer-driven-contracts) | [Recording](https://www.youtube.com/watch?v=zfGKX5iKSis&list=PLmEaqnTJ40Oqo9VlbcUakVmFZgx5weLrs&index=25&t=141s&ab_channel=apidays) | ES | English |
 
 
 <p align=\\"center\\"> rendered in postcontent </p>

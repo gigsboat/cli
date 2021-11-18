@@ -3,6 +3,7 @@ import path from 'path'
 import { getAllFiles } from './utils/fs.js'
 import { convertToJson } from './utils/yaml-parser.js'
 import { getEventsMd, formatToMarkdown } from './utils/md-formatter.js'
+import { createYearBuckets } from './utils/content-manager.js'
 
 export { formatToMarkdown, generateGigs, generateDocument }
 
@@ -57,33 +58,20 @@ async function generateGigs({ sourceDirectory }) {
   }
 
   const entriesByBucket = await getEntriesByBuckets(entries)
-  const entriesForYearMarkdown = getEventsMd(entriesByBucket.bucketsYear)
+  const entriesForYearMarkdown = getEventsMd(entriesByBucket.bucketsByYear)
   return entriesForYearMarkdown
 }
 
 async function getEntriesByBuckets(entries) {
-  const bucketsYear = {}
-  // const bucketsAll = []
-  // const bucketsType = {}
-  // const bucketsLanguage = {}
-  // const bucketsCountry = {}
+  // @TODO these buckets:
+  //  const bucketsAll = []
+  //  const bucketsType = {}
+  //  const bucketsLanguage = {}
+  //  const bucketsCountry = {}
 
-  for (const entry of entries) {
-    const { attributes } = entry
-    const { date } = attributes
-
-    const year = new Date(date).getFullYear()
-    if (bucketsYear[year] === undefined) {
-      bucketsYear[year] = {
-        year: year,
-        items: [entry]
-      }
-    } else {
-      bucketsYear[year].items.push(entry)
-    }
-  }
+  const bucketsByYear = createYearBuckets(entries)
 
   return {
-    bucketsYear
+    bucketsByYear
   }
 }
