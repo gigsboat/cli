@@ -3,7 +3,7 @@ import path from 'path'
 import { getAllFiles } from './utils/fs.js'
 import { convertToJson } from './utils/yaml-parser.js'
 import { getEventsMd, formatToMarkdown } from './utils/md-formatter.js'
-import { createYearBuckets } from './utils/content-manager.js'
+import { createYearBuckets, getEventsStats } from './utils/content-manager.js'
 
 export { formatToMarkdown, generateGigs, generateDocument }
 
@@ -70,8 +70,10 @@ async function getEntriesByBuckets(entries) {
   //  const bucketsCountry = {}
 
   const bucketsByYear = createYearBuckets(entries)
+  const eventsStats = getEventsStats(entries)
 
   return {
-    bucketsByYear
+    bucketsByYear,
+    eventsStats
   }
 }
