@@ -29,7 +29,10 @@ test('process events json data to provide a complete markdown document', () => {
             language: null
           }
         }
-      ]
+      ],
+      stats: {
+        total: 1
+      }
     },
     {
       year: 2021,
@@ -38,6 +41,7 @@ test('process events json data to provide a complete markdown document', () => {
           attributes: {
             date: new Date('2021-02-01'),
             title: 'title',
+            type: 'conference',
             name: 'name',
             slides_url: 'https://example.com',
             recording_url: null,
@@ -49,6 +53,55 @@ test('process events json data to provide a complete markdown document', () => {
           attributes: {
             date: new Date('2021-02-02'),
             title: 'title',
+            type: 'meetup',
+            name: 'name',
+            slides_url: null,
+            recording_url: 'https://example.com',
+            country_code: 'US',
+            language: 'English'
+          }
+        },
+        {
+          attributes: {
+            date: new Date('2021-02-02'),
+            title: 'title',
+            type: 'podcast',
+            name: 'name',
+            slides_url: null,
+            recording_url: 'https://example.com',
+            country_code: 'US',
+            language: 'English'
+          }
+        },
+        {
+          attributes: {
+            date: new Date('2021-02-02'),
+            title: 'title',
+            type: 'article',
+            name: 'name',
+            slides_url: null,
+            recording_url: 'https://example.com',
+            country_code: 'US',
+            language: 'English'
+          }
+        },
+        {
+          attributes: {
+            date: new Date('2021-02-02'),
+            title: 'title',
+            type: 'webinar',
+            name: 'name',
+            slides_url: null,
+            recording_url: 'https://example.com',
+            country_code: 'US',
+            language: 'English'
+          }
+        },
+        {
+          attributes: {
+            date: new Date('2021-02-02'),
+            title: 'title',
+            type: 'webinar',
             name: 'name',
             slides_url: null,
             recording_url: 'https://example.com',
@@ -56,7 +109,16 @@ test('process events json data to provide a complete markdown document', () => {
             language: 'English'
           }
         }
-      ]
+      ],
+      stats: {
+        total: 6,
+        total_podcast: 1,
+        total_conference: 1,
+        total_webinar: 2,
+        total_meetup: 1,
+        total_article: 1,
+        total_other: 0
+      }
     }
   ]
 

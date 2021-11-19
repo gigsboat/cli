@@ -77,9 +77,6 @@ function eventsListForYear(eventsOfYear) {
     h1: eventsOfYear.year
   })
   eventsByYear.push(getStatsBadges(eventsOfYear))
-  eventsByYear.push({
-    p: `[${eventsOfYear.items.length}] ${eventsOfYear.year}`
-  })
 
   const eventsTableEntries = []
   eventsOfYear.items.forEach((event) => {
