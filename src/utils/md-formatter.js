@@ -41,7 +41,7 @@ function eventsListForYear(eventsOfYear) {
     h1: eventsOfYear.year
   })
   eventsByYear.push({
-    p: `[${eventsOfYear.items.length}] total events for ${eventsOfYear.year}`
+    p: `[**${eventsOfYear.items.length}**] total events for ${eventsOfYear.year}`
   })
 
   const eventsTableEntries = []
