@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/gigsboat/cli/master/.github/gigsboat-2.png" height="360" />
+  <img src="https://raw.githubusercontent.com/gigsboat/cli/master/.github/gigsboat-2.png" height="160" />
 </p>
 
 <p align="center">
@@ -21,6 +21,15 @@
   <a href="https://snyk.io/test/github/gigsboat/cli"><img src="https://snyk.io/test/github/gigsboat/cli/badge.svg" alt="Known Vulnerabilities"/></a>
   <a href="./SECURITY.md"><img src="https://img.shields.io/badge/Security-Responsible%20Disclosure-yellow.svg" alt="Responsible Disclosure Policy" /></a>
 </p>
+
+# The Hook
+
+Track your speaking activities all within your GitHub opensource repository!
+
+Here is how [I'm doing it](https://github.com/lirantal/public-speaking):
+
+![](https://github.com/gigsboat/cli/blob/main/.github/gigsboat-screenshot.png)
+
 
 # About
 
