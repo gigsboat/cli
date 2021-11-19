@@ -1,8 +1,13 @@
 import path from 'path'
+import marked from 'marked'
 
 import { getAllFiles } from './utils/fs.js'
 import { convertToJson } from './utils/yaml-parser.js'
-import { getEventsMd, formatToMarkdown } from './utils/md-formatter.js'
+import {
+  getEventsMd,
+  formatToMarkdown,
+  getStatsBadges
+} from './utils/md-formatter.js'
 import { createYearBuckets, getEventsStats } from './utils/content-manager.js'
 
 export { formatToMarkdown, generateGigs, generateDocument }
@@ -12,23 +17,37 @@ async function generateDocument({ sourceDirectory, preContent, postContent }) {
   let markdownOutputPostContent = ''
   let document = ''
 
-  const eventsMarkdown = await generateGigs({ sourceDirectory })
+  const { entriesForYearMarkdown, entriesByBucket } = await generateGigs({
+    sourceDirectory
+  })
 
   if (preContent) {
-    markdownOutputPreContent = processCustomContent(preContent)
+    markdownOutputPreContent = processCustomContent({
+      contents: preContent
+    })
   }
 
   if (postContent) {
-    markdownOutputPostContent = processCustomContent(postContent)
+    markdownOutputPostContent = processCustomContent({
+      contents: postContent
+    })
   }
 
+  const statsHeader = `<div align='center'>${marked.parse(
+    getStatsBadges(entriesByBucket)
+  )}</div>
+  `
+
   document +=
-    markdownOutputPreContent + eventsMarkdown + markdownOutputPostContent
+    statsHeader +
+    markdownOutputPreContent +
+    entriesForYearMarkdown +
+    markdownOutputPostContent
 
   return document
 }
 
-function processCustomContent(contents) {
+function processCustomContent({ contents }) {
   let markdownContent = ''
   for (const content of contents) {
     if (content.hasOwnProperty('raw')) {
@@ -59,21 +78,22 @@ async function generateGigs({ sourceDirectory }) {
 
   const entriesByBucket = await getEntriesByBuckets(entries)
   const entriesForYearMarkdown = getEventsMd(entriesByBucket.bucketsByYear)
-  return entriesForYearMarkdown
+  return {
+    entriesForYearMarkdown,
+    entriesByBucket
+  }
 }
 
 async function getEntriesByBuckets(entries) {
   // @TODO these buckets:
-  //  const bucketsAll = []
-  //  const bucketsType = {}
   //  const bucketsLanguage = {}
   //  const bucketsCountry = {}
 
   const bucketsByYear = createYearBuckets(entries)
-  const eventsStats = getEventsStats(entries)
+  const statsTotal = getEventsStats(entries)
 
   return {
     bucketsByYear,
-    eventsStats
+    stats: statsTotal
   }
 }
