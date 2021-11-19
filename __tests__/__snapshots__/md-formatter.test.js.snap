@@ -12,13 +12,14 @@ exports[`process events json data to provide a complete markdown document 1`] = 
 "# Table of Contents
 
 
- - [Events in 2016](#2016)
- - [Events in 2021](#2021)
+ - [Year of 2016](#2016) - total events 1
+ - [Year of 2021](#2021) - total events 6
 
 # 2016
 
 
-[1] total events for 2016
+![Total Events](https://img.shields.io/badge/total-1-blue?style=flat-square)     
+
 
 | Date | Event | Title | Slides | Recording | Location | Language |
 | ---- | ----- | ----- | ------ | --------- | -------- | -------- |
@@ -28,11 +29,16 @@ exports[`process events json data to provide a complete markdown document 1`] = 
 # 2021
 
 
-[2] total events for 2021
+![Total Events](https://img.shields.io/badge/total-6-blue?style=flat-square) ![Total Meetups](https://img.shields.io/badge/meetups-1-violet?style=flat-square) ![Total Conferences](https://img.shields.io/badge/conferences-1-red?style=flat-square) ![Total Podcasts](https://img.shields.io/badge/podcasts-1-yellow?style=flat-square) ![Total Webinars](https://img.shields.io/badge/webinars-2-lightgrey?style=flat-square) ![Total Podcasts](https://img.shields.io/badge/articles-1-green?style=flat-square)
+
 
 | Date | Event | Title | Slides | Recording | Location | Language |
 | ---- | ----- | ----- | ------ | --------- | -------- | -------- |
 | 2021-2-1 | name | title | [Slides](https://example.com) |  |  | English |
+| 2021-2-2 | name | title |  | [Recording](https://example.com) | US | English |
+| 2021-2-2 | name | title |  | [Recording](https://example.com) | US | English |
+| 2021-2-2 | name | title |  | [Recording](https://example.com) | US | English |
+| 2021-2-2 | name | title |  | [Recording](https://example.com) | US | English |
 | 2021-2-2 | name | title |  | [Recording](https://example.com) | US | English |
 
 
