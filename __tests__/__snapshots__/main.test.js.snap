@@ -3,7 +3,8 @@
 exports[`given a directory of markdown files a full document is rendered 1`] = `
 "<div align='center'><p><img src=\\"https://img.shields.io/badge/total-6-blue?style=flat-square\\" alt=\\"Total Events\\"> <img src=\\"https://img.shields.io/badge/meetups-1-violet?style=flat-square\\" alt=\\"Total Meetups\\"> <img src=\\"https://img.shields.io/badge/conferences-1-red?style=flat-square\\" alt=\\"Total Conferences\\"> <img src=\\"https://img.shields.io/badge/podcasts-1-yellow?style=flat-square\\" alt=\\"Total Podcasts\\"> <img src=\\"https://img.shields.io/badge/webinars-1-lightgrey?style=flat-square\\" alt=\\"Total Webinars\\"> <img src=\\"https://img.shields.io/badge/articles-1-green?style=flat-square\\" alt=\\"Total Podcasts\\"></p>
 </div>
-  # Table of Contents
+  
+# Table of Contents
 
 
  - [Year of 2021](#2021) - total events 3
@@ -35,6 +36,7 @@ exports[`given a directory of markdown files a full document is rendered 1`] = `
 | 2019-9-12 | APIdays Barcelona | Consumer-Driven Contracts: A better approach for API Testing | [Slides](https://slides.com/lirantal/consumer-driven-contracts) | [Recording](https://www.youtube.com/watch?v=zfGKX5iKSis&list=PLmEaqnTJ40Oqo9VlbcUakVmFZgx5weLrs&index=25&t=141s&ab_channel=apidays) | ES | English |
 
 
+
 "
 `;
 
@@ -44,6 +46,7 @@ exports[`given a directory of markdown files a full document is rendered along w
   <p> actual html is allowed too </p>
 
 Liran Tal
+
 
 # Table of Contents
 
@@ -75,6 +78,7 @@ Liran Tal
 | 2019-9-27 | JSConf Budapest | StrangerDanger: Finding Security Vulnerabilities Before They Find You! |  | [Recording](https://www.youtube.com/watch?v=3H8pF6yoSgU&list=PL37ZVnwpeshEMCvdYDdZ09Sy-toTftWu0&index=15&ab_channel=JSConf) | HU | English |
 | 2019-9-15 | JSConf Budapest | StrangerDanger: Finding Security Vulnerabilities Before They Find You! |  | [Recording](https://www.youtube.com/watch?v=3H8pF6yoSgU&list=PL37ZVnwpeshEMCvdYDdZ09Sy-toTftWu0&index=15&ab_channel=JSConf) | HU | English |
 | 2019-9-12 | APIdays Barcelona | Consumer-Driven Contracts: A better approach for API Testing | [Slides](https://slides.com/lirantal/consumer-driven-contracts) | [Recording](https://www.youtube.com/watch?v=zfGKX5iKSis&list=PLmEaqnTJ40Oqo9VlbcUakVmFZgx5weLrs&index=25&t=141s&ab_channel=apidays) | ES | English |
+
 
 
 <p align=\\"center\\"> rendered in postcontent </p>

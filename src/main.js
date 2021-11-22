@@ -41,7 +41,9 @@ async function generateDocument({ sourceDirectory, preContent, postContent }) {
   document +=
     statsHeader +
     markdownOutputPreContent +
+    '\n' +
     entriesForYearMarkdown +
+    '\n' +
     markdownOutputPostContent
 
   return document
