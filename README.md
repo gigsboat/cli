@@ -141,6 +141,18 @@ You can save this data file as say `2019-05-30.md` in your `pages/` directory so
 
 You might wonder why is this referred to as a markdown file? because the front matter piece of it all the YAML structure between the opening and closing `---`, after which, it can have a markdown-formatted content, so you can treat it as a markdown document for any purpose. Some ideas: you may want to capture your own personal notes of that event, maybe add pictures, add your summary and so on.
 
+#### type property
+
+There are currently 5 supported values for the `type` property within the YAML Front Matter.  The gigsboat cli will count how many of each of these exist, and create a badge with that count on the generated README.md file.
+
+These values are:
+
+* conference
+* podcast
+* webinar
+* meetup
+* article
+
 ## I already track events via YAML / Markdown
 
 Use the `gigsboat` CLI to manage them all!
