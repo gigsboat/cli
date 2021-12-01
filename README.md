@@ -90,7 +90,7 @@ Now, let's break it down further to give you example code you can get started wi
 You are probably going to manage it all via a repository, so once you have one created, here's a suggested directory structure:
 
 ```
-- package.json
+- gigsboat.json
 - pages
    |
     - 2020
@@ -105,6 +105,8 @@ You are probably going to manage it all via a repository, so once you have one c
 In the above we are nesting all of the data files under `pages/<year>/` directories.
 
 You are free to create whatever directory structure that makes sense for you, but note that `gigsboat` will by default search the data files under the `pages` root directory in which it runs.
+
+The `gigsboat.json` file is used as a configuration file for the gigsboat cli. 
 
 Note: the data filenames can be anything. In this example, it shows a simple date format of `yyyy-mm-dd` however that may not always work - for example, when you have two speaking engagements (a podcast recording, and a meetup talk) on the same day. That said, the filename doesn't matter at all, and you can then follow a convention, of say, `2021-11-26-2.md` which adds a suffix of incrementing numbers to the day.
 
@@ -152,6 +154,53 @@ These values are:
 * webinar
 * meetup
 * article
+
+### gigsboat.json
+
+This is the configuration file for the gigsboat CLI.  This contains four sections:
+
+* `input`
+  * `sourceDirectory` - this is the relative path to the directory in which the data files for the generated file are located
+* `output`
+  * `markdownFile` - this is the name of the file that should be generated
+* `preContent` - a collection of raw or formatted HTML to place at the start of the generated file
+* `postContent` - a collection of raw or formatted HTML to place at the end of the generated file
+
+A complete example of this configuration file:
+
+```json
+{
+  "input": {
+    "sourceDirectory": "pages"
+  },
+  "output": {
+    "markdownFile": "README-gigs.md"
+  },
+  "preContent": [
+    {
+      "raw": "<p align='center'><h1 align='center'>This will appear at the top of the generated README.md file</h1>"
+    },
+    {
+      "raw": "<p align='center'>Let's add some badges! <p align='center'><a href='https://twitter.com/liran_tal'><img alt='Twitter Follow' src='https://img.shields.io/twitter/follow/liran_tal?style=social'></a></p>"
+    },
+    {
+      "format": [
+        {
+          "ul": [
+            "In addition to raw HTML elements, you can use format sections",
+            "Using HTML elements to construct the output"
+          ]
+        }
+      ]
+    }
+  ],
+  "postContent": [
+    {
+      "raw": "<p align='center'><h1 align='center'>This will appear at the bottom of the generated README.md file</h1>"
+    }
+  ]
+}
+```
 
 ## I already track events via YAML / Markdown
 
