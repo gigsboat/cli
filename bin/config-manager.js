@@ -49,6 +49,16 @@ function validateConfig(config) {
             format: { type: 'array', items: { type: 'object' } }
           }
         }
+      },
+      postContent: {
+        type: 'array',
+        items: {
+          type: 'object',
+          properties: {
+            raw: { type: 'string' },
+            format: { type: 'array', items: { type: 'object' } }
+          }
+        }
       }
     }
   }
