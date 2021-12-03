@@ -145,7 +145,7 @@ You might wonder why is this referred to as a markdown file? because the front m
 
 #### type property
 
-There are currently 5 supported values for the `type` property within the YAML Front Matter.  The gigsboat cli will count how many of each of these exist, and create a badge with that count on the generated README.md file.
+There are currently 6 supported values for the `type` property within the YAML Front Matter.  The gigsboat cli will count how many of each of these exist, and create a badge with that count on the generated README.md file.
 
 These values are:
 
@@ -154,6 +154,9 @@ These values are:
 * webinar
 * meetup
 * article
+* workshop
+
+It is possible to use any free form text in the type property, however, when these aren't matched against the above, they will be counted in a fallback type called 'other'.
 
 ### gigsboat.json
 
