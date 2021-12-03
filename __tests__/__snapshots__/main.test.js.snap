@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`given a directory of markdown files a full document is rendered 1`] = `
-"<div align='center'><p><img src=\\"https://img.shields.io/badge/total-6-blue?style=flat-square\\" alt=\\"Total Events\\"> <img src=\\"https://img.shields.io/badge/meetups-1-violet?style=flat-square\\" alt=\\"Total Meetups\\"> <img src=\\"https://img.shields.io/badge/conferences-1-red?style=flat-square\\" alt=\\"Total Conferences\\"> <img src=\\"https://img.shields.io/badge/podcasts-1-yellow?style=flat-square\\" alt=\\"Total Podcasts\\"> <img src=\\"https://img.shields.io/badge/webinars-1-lightgrey?style=flat-square\\" alt=\\"Total Webinars\\"> <img src=\\"https://img.shields.io/badge/articles-1-green?style=flat-square\\" alt=\\"Total Podcasts\\"></p>
+"<div align='center'><p><img src=\\"https://img.shields.io/badge/total-6-blue?style=flat-square\\" alt=\\"Total Events\\"> <img src=\\"https://img.shields.io/badge/meetups-1-violet?style=flat-square\\" alt=\\"Total Meetups\\"> <img src=\\"https://img.shields.io/badge/conferences-1-red?style=flat-square\\" alt=\\"Total Conferences\\"> <img src=\\"https://img.shields.io/badge/podcasts-1-yellow?style=flat-square\\" alt=\\"Total Podcasts\\"> <img src=\\"https://img.shields.io/badge/webinars-1-lightgrey?style=flat-square\\" alt=\\"Total Webinars\\"> <img src=\\"https://img.shields.io/badge/articles-1-green?style=flat-square\\" alt=\\"Total Podcasts\\"> </p>
 </div>
   
 # Table of Contents
@@ -13,7 +13,7 @@ exports[`given a directory of markdown files a full document is rendered 1`] = `
 # 2021
 
 
-![Total Events](https://img.shields.io/badge/total-3-blue?style=flat-square)  ![Total Conferences](https://img.shields.io/badge/conferences-1-red?style=flat-square)   ![Total Podcasts](https://img.shields.io/badge/articles-1-green?style=flat-square)
+![Total Events](https://img.shields.io/badge/total-3-blue?style=flat-square)  ![Total Conferences](https://img.shields.io/badge/conferences-1-red?style=flat-square)   ![Total Podcasts](https://img.shields.io/badge/articles-1-green?style=flat-square) 
 
 
 | Date | Event | Title | Slides | Recording | Location | Language |
@@ -26,7 +26,7 @@ exports[`given a directory of markdown files a full document is rendered 1`] = `
 # 2019
 
 
-![Total Events](https://img.shields.io/badge/total-3-blue?style=flat-square) ![Total Meetups](https://img.shields.io/badge/meetups-1-violet?style=flat-square)  ![Total Podcasts](https://img.shields.io/badge/podcasts-1-yellow?style=flat-square) ![Total Webinars](https://img.shields.io/badge/webinars-1-lightgrey?style=flat-square) 
+![Total Events](https://img.shields.io/badge/total-3-blue?style=flat-square) ![Total Meetups](https://img.shields.io/badge/meetups-1-violet?style=flat-square)  ![Total Podcasts](https://img.shields.io/badge/podcasts-1-yellow?style=flat-square) ![Total Webinars](https://img.shields.io/badge/webinars-1-lightgrey?style=flat-square)  
 
 
 | Date | Event | Title | Slides | Recording | Location | Language |
@@ -41,7 +41,7 @@ exports[`given a directory of markdown files a full document is rendered 1`] = `
 `;
 
 exports[`given a directory of markdown files a full document is rendered along with pre and post content 1`] = `
-"<div align='center'><p><img src=\\"https://img.shields.io/badge/total-6-blue?style=flat-square\\" alt=\\"Total Events\\"> <img src=\\"https://img.shields.io/badge/meetups-1-violet?style=flat-square\\" alt=\\"Total Meetups\\"> <img src=\\"https://img.shields.io/badge/conferences-1-red?style=flat-square\\" alt=\\"Total Conferences\\"> <img src=\\"https://img.shields.io/badge/podcasts-1-yellow?style=flat-square\\" alt=\\"Total Podcasts\\"> <img src=\\"https://img.shields.io/badge/webinars-1-lightgrey?style=flat-square\\" alt=\\"Total Webinars\\"> <img src=\\"https://img.shields.io/badge/articles-1-green?style=flat-square\\" alt=\\"Total Podcasts\\"></p>
+"<div align='center'><p><img src=\\"https://img.shields.io/badge/total-6-blue?style=flat-square\\" alt=\\"Total Events\\"> <img src=\\"https://img.shields.io/badge/meetups-1-violet?style=flat-square\\" alt=\\"Total Meetups\\"> <img src=\\"https://img.shields.io/badge/conferences-1-red?style=flat-square\\" alt=\\"Total Conferences\\"> <img src=\\"https://img.shields.io/badge/podcasts-1-yellow?style=flat-square\\" alt=\\"Total Podcasts\\"> <img src=\\"https://img.shields.io/badge/webinars-1-lightgrey?style=flat-square\\" alt=\\"Total Webinars\\"> <img src=\\"https://img.shields.io/badge/articles-1-green?style=flat-square\\" alt=\\"Total Podcasts\\"> </p>
 </div>
   <p> actual html is allowed too </p>
 
@@ -57,7 +57,7 @@ Liran Tal
 # 2021
 
 
-![Total Events](https://img.shields.io/badge/total-3-blue?style=flat-square)  ![Total Conferences](https://img.shields.io/badge/conferences-1-red?style=flat-square)   ![Total Podcasts](https://img.shields.io/badge/articles-1-green?style=flat-square)
+![Total Events](https://img.shields.io/badge/total-3-blue?style=flat-square)  ![Total Conferences](https://img.shields.io/badge/conferences-1-red?style=flat-square)   ![Total Podcasts](https://img.shields.io/badge/articles-1-green?style=flat-square) 
 
 
 | Date | Event | Title | Slides | Recording | Location | Language |
@@ -70,7 +70,7 @@ Liran Tal
 # 2019
 
 
-![Total Events](https://img.shields.io/badge/total-3-blue?style=flat-square) ![Total Meetups](https://img.shields.io/badge/meetups-1-violet?style=flat-square)  ![Total Podcasts](https://img.shields.io/badge/podcasts-1-yellow?style=flat-square) ![Total Webinars](https://img.shields.io/badge/webinars-1-lightgrey?style=flat-square) 
+![Total Events](https://img.shields.io/badge/total-3-blue?style=flat-square) ![Total Meetups](https://img.shields.io/badge/meetups-1-violet?style=flat-square)  ![Total Podcasts](https://img.shields.io/badge/podcasts-1-yellow?style=flat-square) ![Total Webinars](https://img.shields.io/badge/webinars-1-lightgrey?style=flat-square)  
 
 
 | Date | Event | Title | Slides | Recording | Location | Language |

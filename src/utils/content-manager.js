@@ -16,6 +16,7 @@ function getEventsStats(entries) {
     total_webinar: 0,
     total_meetup: 0,
     total_article: 0,
+    total_workshop: 0,
     total_other: 0
   }
 
@@ -33,6 +34,8 @@ function getEventsStats(entries) {
       stats.total_meetup += 1
     } else if (type === 'article') {
       stats.total_article += 1
+    } else if (type === 'workshop') {
+      stats.total_workshop += 1
     } else {
       stats.total_other += 1
     }
