@@ -81,3 +81,6 @@ typings/
 
 # Snyk Code
 .dccache
+
+# Developing on a Mac
+.DS_Store

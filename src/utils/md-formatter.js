@@ -56,6 +56,9 @@ export function getStatsBadges(events) {
   const badgeForTotalArticles = events.stats.total_article
     ? `![Total Podcasts](https://img.shields.io/badge/articles-${events.stats.total_article}-green?style=flat-square)`
     : 0
+  const badgeForTotalWorkshops = events.stats.total_workshop
+    ? `![Total Workshops](https://img.shields.io/badge/workshops-${events.stats.total_workshop}-orange?style=flat-square)`
+    : 0
 
   statsBadges.push({
     p: `${badgeForTotalEvents ? badgeForTotalEvents : ''} ${
@@ -64,7 +67,7 @@ export function getStatsBadges(events) {
       badgeForTotalPodcasts ? badgeForTotalPodcasts : ''
     } ${badgeForTotalWebinars ? badgeForTotalWebinars : ''} ${
       badgeForTotalArticles ? badgeForTotalArticles : ''
-    }`
+    } ${badgeForTotalWorkshops ? badgeForTotalWorkshops : ''}`
   })
 
   return json2md(statsBadges) + '\n'

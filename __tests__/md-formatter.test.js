@@ -108,15 +108,40 @@ test('process events json data to provide a complete markdown document', () => {
             country_code: 'US',
             language: 'English'
           }
+        },
+        {
+          attributes: {
+            date: new Date('2021-02-02'),
+            title: 'title',
+            type: 'workshop',
+            name: 'name',
+            slides_url: null,
+            recording_url: 'https://example.com',
+            country_code: 'US',
+            language: 'English'
+          }
+        },
+        {
+          attributes: {
+            date: new Date('2021-02-03'),
+            title: 'title',
+            type: 'workshop',
+            name: 'name',
+            slides_url: null,
+            recording_url: 'https://example.com',
+            country_code: 'US',
+            language: 'English'
+          }
         }
       ],
       stats: {
-        total: 6,
+        total: 8,
         total_podcast: 1,
         total_conference: 1,
         total_webinar: 2,
         total_meetup: 1,
         total_article: 1,
+        total_workshop: 2,
         total_other: 0
       }
     }
