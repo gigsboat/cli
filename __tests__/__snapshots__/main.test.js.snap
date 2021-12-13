@@ -37,7 +37,8 @@ exports[`given a directory of markdown files a full document is rendered 1`] = `
 
 
 
-"
+
+<i>Updated on 2021-12-13T18:30:00.000Z</i>"
 `;
 
 exports[`given a directory of markdown files a full document is rendered along with pre and post content 1`] = `
@@ -85,5 +86,6 @@ Liran Tal
 
 Thank you!
 
-"
+
+<i>Updated on 2021-12-13T18:30:00.000Z</i>"
 `;
