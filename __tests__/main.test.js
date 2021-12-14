@@ -7,7 +7,7 @@ const __dirname = new URL('.', import.meta.url).pathname
 
 beforeEach(() => {
   jest.useFakeTimers('modern')
-  jest.setSystemTime(new Date(2021, 11, 14))
+  jest.setSystemTime(new Date(Date.UTC(2021, 11, 14)))
 })
 
 afterAll(() => jest.useRealTimers())
