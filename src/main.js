@@ -38,13 +38,18 @@ async function generateDocument({ sourceDirectory, preContent, postContent }) {
   )}</div>
   `
 
+  const currentDate = new Date().toISOString()
+  const footer = `<i>Updated on ${currentDate}</i>`
+
   document +=
     statsHeader +
     markdownOutputPreContent +
     '\n' +
     entriesForYearMarkdown +
     '\n' +
-    markdownOutputPostContent
+    markdownOutputPostContent +
+    '\n' +
+    footer
 
   return document
 }
