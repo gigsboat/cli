@@ -4,9 +4,13 @@ import path from 'path'
 
 const configFileName = 'gigsboat.json'
 const __dirname = process.cwd()
+let gigsConfig = undefined
 
 export async function getConfig() {
-  let gigsConfig = {}
+  if (gigsConfig) {
+    return gigsConfig
+  }
+
   try {
     const jsonConfigFileContents = await fs.readFile(
       path.join(__dirname, configFileName),
