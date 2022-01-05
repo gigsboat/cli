@@ -1,4 +1,5 @@
 import json2md from 'json2md'
+import path from 'path'
 
 export function formatToMarkdown(data) {
   return json2md(data)
@@ -87,10 +88,14 @@ function eventsListForYear(eventsOfYear) {
       event.attributes.date.getMonth() + 1
     }-${event.attributes.date.getDate()}`
 
+    const pathToFileOnGitHub = encodeURI(event.fileRelativePath)
+
     eventsTableEntries.push({
       Date: eventDate,
       Event: event.attributes.name,
-      Title: event.attributes.title,
+      Title: event.fileRelativePath
+        ? `[${event.attributes.title}](${pathToFileOnGitHub})`
+        : event.attributes.title,
       Slides: event.attributes.slides_url
         ? `[Slides](${event.attributes.slides_url})`
         : '',

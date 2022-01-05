@@ -80,6 +80,14 @@ async function generateGigs({ sourceDirectory }) {
   const entries = []
   for (const filePath of allFilesFlatList) {
     const json = await convertToJson(filePath)
+
+    // push the relative path to the file as part of the data object
+    let fileDirectoryPath = path.relative(directoryPath, filePath)
+    if (!path.isAbsolute(sourceDirectory)) {
+      fileDirectoryPath = path.join(sourceDirectory, fileDirectoryPath)
+    }
+    json.fileRelativePath = fileDirectoryPath
+
     entries.push(json)
   }
 
