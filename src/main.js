@@ -92,7 +92,9 @@ async function generateGigs({ sourceDirectory }) {
   }
 
   const entriesByBucket = await getEntriesByBuckets(entries)
-  const entriesForYearMarkdown = getEventsMd(entriesByBucket.bucketsByYear)
+  const entriesForYearMarkdown = await getEventsMd(
+    entriesByBucket.bucketsByYear
+  )
   return {
     entriesForYearMarkdown,
     entriesByBucket

@@ -40,7 +40,8 @@ function validateConfig(config) {
       output: {
         type: 'object',
         properties: {
-          markdownFile: { type: 'string', default: 'README-gigsfile.md' }
+          markdownFile: { type: 'string', default: 'README-gigsfile.md' },
+          includePictureGalleryYearly: { type: 'boolean', default: true }
         },
         default: {}
       },
