@@ -20,9 +20,6 @@ test('given a directory of markdown files a full document is rendered', async ()
 
 test('given a directory of markdown files a full document is rendered along with pre and post content', async () => {
   const filePath = path.join(__dirname, './__fixtures__/main-datafiles')
-  console.log('---------------------------->')
-  console.log(filePath)
-  console.log('---------------------------->')
   const jsonResult = await generateDocument({
     sourceDirectory: filePath,
     preContent: [

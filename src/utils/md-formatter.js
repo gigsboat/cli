@@ -1,14 +1,18 @@
 import json2md from 'json2md'
-import path from 'path'
+import { getConfig } from '../../bin/config-manager.js'
+
+json2md.converters.rawHTML = function (input) {
+  return input
+}
 
 export function formatToMarkdown(data) {
   return json2md(data)
 }
 
-export function getEventsMd(events) {
+export async function getEventsMd(events) {
   let markdownEventsContent = ''
   for (const yearlyItems of events) {
-    const eventsByYear = eventsListForYear(yearlyItems)
+    const eventsByYear = await eventsListForYear(yearlyItems)
     markdownEventsContent += eventsByYear + '\n'
   }
 
@@ -74,8 +78,11 @@ export function getStatsBadges(events) {
   return json2md(statsBadges) + '\n'
 }
 
-function eventsListForYear(eventsOfYear) {
+async function eventsListForYear(eventsOfYear) {
+  const gigsConfig = await getConfig()
+
   const eventsByYear = []
+  let eventsImageGalleryItems = []
 
   eventsByYear.push({
     h1: eventsOfYear.year
@@ -107,7 +114,39 @@ function eventsListForYear(eventsOfYear) {
         : '',
       Language: event.attributes.language ? event.attributes.language : ''
     })
+
+    if (event.attributes.images) {
+      const imagesList = event.attributes.images.filter((item) => !!item)
+      eventsImageGalleryItems = eventsImageGalleryItems.concat(imagesList)
+    }
   })
+
+  if (gigsConfig?.output?.includePictureGalleryYearly === true) {
+    let tableItems = []
+    let tableHTML = ''
+
+    for (let i = 0; i <= eventsImageGalleryItems.length - 1; i + 7) {
+      tableItems.push(eventsImageGalleryItems.splice(i, 8))
+    }
+
+    if (tableItems.length) {
+      tableHTML += '<table>' + '\n'
+      tableItems.forEach((itemsRow) => {
+        if (itemsRow.length) {
+          tableHTML += '  <tr>' + '\n'
+          itemsRow.forEach((item) => {
+            tableHTML +=
+              `    <td align="center"> <img src="${item}" width="85" height="50" /> </td>` +
+              '\n'
+          })
+          tableHTML += '  </tr>' + '\n'
+        }
+      })
+      tableHTML += '</table>' + '\n'
+    }
+
+    eventsByYear.push(json2md({ rawHTML: tableHTML }))
+  }
 
   eventsByYear.push({
     table: {

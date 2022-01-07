@@ -6,20 +6,24 @@ const configFileName = 'gigsboat.json'
 const __dirname = process.cwd()
 let gigsConfig = undefined
 
-export async function getConfig() {
+export async function getConfig(providedConfig) {
   if (gigsConfig) {
     return gigsConfig
   }
 
-  try {
-    const jsonConfigFileContents = await fs.readFile(
-      path.join(__dirname, configFileName),
-      'utf8'
-    )
-    gigsConfig = JSON.parse(jsonConfigFileContents)
-  } catch (error) {
-    // debug
-    // console.error(error)
+  if (providedConfig) {
+    gigsConfig = providedConfig
+  } else {
+    try {
+      const jsonConfigFileContents = await fs.readFile(
+        path.join(__dirname, configFileName),
+        'utf8'
+      )
+      gigsConfig = JSON.parse(jsonConfigFileContents)
+    } catch (error) {
+      // debug
+      // console.error(error)
+    }
   }
 
   validateConfig(gigsConfig)
@@ -40,7 +44,8 @@ function validateConfig(config) {
       output: {
         type: 'object',
         properties: {
-          markdownFile: { type: 'string', default: 'README-gigsfile.md' }
+          markdownFile: { type: 'string', default: 'README-gigsfile.md' },
+          includePictureGalleryYearly: { type: 'boolean', default: true }
         },
         default: {}
       },
