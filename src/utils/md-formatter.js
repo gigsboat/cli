@@ -121,7 +121,7 @@ async function eventsListForYear(eventsOfYear) {
     }
   })
 
-  if (gigsConfig.output.includePictureGalleryYearly === true) {
+  if (gigsConfig?.output?.includePictureGalleryYearly === true) {
     let tableItems = []
     let tableHTML = ''
 
