@@ -10,7 +10,12 @@ import {
 } from './utils/md-formatter.js'
 import { createYearBuckets, getEventsStats } from './utils/content-manager.js'
 
-export { formatToMarkdown, generateGigs, generateDocument }
+export {
+  formatToMarkdown,
+  generateGigs,
+  generateDocument,
+  generateEleventyDocument
+}
 
 async function generateDocument({ sourceDirectory, preContent, postContent }) {
   let markdownOutputPreContent = ''
@@ -52,6 +57,31 @@ async function generateDocument({ sourceDirectory, preContent, postContent }) {
     footer
 
   return document
+}
+
+function generateEleventyDocument({ document, config }) {
+  const { title, description, layout } = config
+  const configDelimiter = '---'
+  const warning = '<!-- DO NOT EDIT! THIS FILE WILL BE OVERRIDDEN BY THE GIGSBOAT SCRIPT -->'
+
+  let eleventyDocument = ''
+
+  eleventyDocument +=
+    configDelimiter +
+    '\n' +
+    `title: ${title}` +
+    '\n' +
+    `description: ${description}` +
+    '\n' +
+    `layout: ${layout}` +
+    '\n' +
+    configDelimiter +
+    '\n' +
+    warning +
+    '\n' +
+    document
+
+  return eleventyDocument
 }
 
 function processCustomContent({ contents }) {
