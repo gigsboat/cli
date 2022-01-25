@@ -10,14 +10,15 @@ import {
 } from './utils/md-formatter.js'
 import { createYearBuckets, getEventsStats } from './utils/content-manager.js'
 
-export {
-  formatToMarkdown,
-  generateGigs,
-  generateDocument,
-  generateEleventyDocument
-}
+export { formatToMarkdown, generateGigs, generateDocument }
 
-async function generateDocument({ sourceDirectory, preContent, postContent }) {
+async function generateDocument({
+  sourceDirectory,
+  preContent,
+  postContent,
+  metadata
+}) {
+  let yamlMetadata = ''
   let markdownOutputPreContent = ''
   let markdownOutputPostContent = ''
   let document = ''
@@ -25,6 +26,10 @@ async function generateDocument({ sourceDirectory, preContent, postContent }) {
   const { entriesForYearMarkdown, entriesByBucket } = await generateGigs({
     sourceDirectory
   })
+
+  if (metadata) {
+    yamlMetadata = generateMetadata(metadata)
+  }
 
   if (preContent) {
     markdownOutputPreContent = processCustomContent({
@@ -47,6 +52,7 @@ async function generateDocument({ sourceDirectory, preContent, postContent }) {
   const footer = `<i>Updated on ${currentDate}</i>`
 
   document +=
+    yamlMetadata +
     statsHeader +
     markdownOutputPreContent +
     '\n' +
@@ -59,29 +65,22 @@ async function generateDocument({ sourceDirectory, preContent, postContent }) {
   return document
 }
 
-function generateEleventyDocument({ document, config }) {
-  const { title, description, layout } = config
-  const configDelimiter = '---'
-  const warning = '<!-- DO NOT EDIT! THIS FILE WILL BE OVERRIDDEN BY THE GIGSBOAT SCRIPT -->'
+function generateMetadata(metadata) {
+  const delimiter = '---'
+  const warning =
+    '<!-- DO NOT EDIT! THIS FILE WILL BE OVERRIDDEN BY THE GIGSBOAT SCRIPT -->'
 
-  let eleventyDocument = ''
+  let yamlMetadata = ''
 
-  eleventyDocument +=
-    configDelimiter +
-    '\n' +
-    `title: ${title}` +
-    '\n' +
-    `description: ${description}` +
-    '\n' +
-    `layout: ${layout}` +
-    '\n' +
-    configDelimiter +
-    '\n' +
-    warning +
-    '\n' +
-    document
+  yamlMetadata += delimiter + '\n'
 
-  return eleventyDocument
+  for (const key in metadata) {
+    yamlMetadata += `${key}: ${metadata[key]}\n`
+  }
+
+  yamlMetadata += delimiter + '\n' + warning + '\n'
+
+  return yamlMetadata
 }
 
 function processCustomContent({ contents }) {
