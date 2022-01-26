@@ -49,3 +49,54 @@ test('given a directory of markdown files a full document is rendered along with
   })
   expect(jsonResult).toMatchSnapshot()
 })
+
+test('given a directory of markdown files a full document is rendered with any yaml metadata passed', async () => {
+  const filePath = path.join(__dirname, './__fixtures__/main-datafiles')
+  const jsonResult = await generateDocument({
+    sourceDirectory: filePath,
+    metadata: {
+      title: 'a title',
+      description: 'decsription of document',
+      randomProp: 'a random prop description',
+      randomPropNumber: 5
+    }
+  })
+  expect(jsonResult).toMatchSnapshot()
+})
+
+test('given a directory of markdown files a full document is rendered with any yaml metadata passed along with pre and post content', async () => {
+  const filePath = path.join(__dirname, './__fixtures__/main-datafiles')
+  const jsonResult = await generateDocument({
+    sourceDirectory: filePath,
+    preContent: [
+      {
+        raw: '<p> actual html is allowed too </p>'
+      },
+      {
+        format: [
+          {
+            p: 'Liran Tal'
+          }
+        ]
+      }
+    ],
+    postContent: [
+      {
+        raw: '<p align="center"> rendered in postcontent </p>'
+      },
+      {
+        format: [
+          {
+            p: 'Thank you!'
+          }
+        ]
+      }
+    ],
+    metadata: {
+      title: 'a title',
+      description: 'decsription of document',
+      layout: 'layoutFileName'
+    }
+  })
+  expect(jsonResult).toMatchSnapshot()
+})
