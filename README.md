@@ -166,7 +166,8 @@ This is the configuration file for the gigsboat CLI.  This contains four section
   * `sourceDirectory` - this is the relative path to the directory in which the data files for the generated file are located
 * `output`
   * `markdownFile` - this is the name of the file that should be generated
-* `preContent` - a collection of raw or formatted HTML to place at the start of the generated file
+* `metadata` - an object containing YAML Front Matter metadata which will be placed at the top of the generated file but not visible on a markdown preview
+* `preContent` - a collection of raw or formatted HTML to place at the start of the generated file preview, after the `meatadata` if any
 * `postContent` - a collection of raw or formatted HTML to place at the end of the generated file
 
 A complete example of this configuration file:
@@ -179,9 +180,13 @@ A complete example of this configuration file:
   "output": {
     "markdownFile": "README-gigs.md"
   },
+  "metadata": {
+    "title": "This will appear as metadata on the top of the generated README.md file and it won't be visible in the file preview, but it can be used with a liquid template",
+    "layout": "You can define the name of a layout file which can be used with a liquid template and a static site generator like [11ty](https://www.11ty.dev/) or [jekyll](https://jekyllrb.com/)"
+  },
   "preContent": [
     {
-      "raw": "<p align='center'><h1 align='center'>This will appear at the top of the generated README.md file</h1>"
+      "raw": "<p align='center'><h1 align='center'>This will appear at the top of the preview of the generated README.md file</h1>"
     },
     {
       "raw": "<p align='center'>Let's add some badges! <p align='center'><a href='https://twitter.com/liran_tal'><img alt='Twitter Follow' src='https://img.shields.io/twitter/follow/liran_tal?style=social'></a></p>"
