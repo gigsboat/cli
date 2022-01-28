@@ -215,6 +215,9 @@ Use npm's built-in `npx` command to fetch, install, and run gigsboat with no con
 npx @gigsboat/cli
 ```
 
+## Generating a static site
+You can use several static site generators to output an html from the generated README.md file. Using jekyll, is great if you want to deploy to github pages. But if you're looking to deploy somewhere else, you might want to use a different tool like [11ty](https://www.11ty.dev/). We have created a guide in [GENERATE_11ty_STATIC_SITE.md](GENERATE_11ty_STATIC_SITE.md) to get you started.
+
 # Contributing
 
 Please consult [CONTRIBUTING](./CONTRIBUTING.md) for guidelines on contributing to this project.
