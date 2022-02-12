@@ -1,5 +1,6 @@
 import json2md from 'json2md'
 import { getConfig } from '../../bin/config-manager.js'
+import { flag as countryFlag, name as countryName } from 'country-emoji'
 
 json2md.converters.rawHTML = function (input) {
   return input
@@ -110,7 +111,9 @@ async function eventsListForYear(eventsOfYear) {
         ? `[Recording](${event.attributes.recording_url})`
         : '',
       Location: event.attributes.country_code
-        ? event.attributes.country_code
+        ? `[${countryFlag(event.attributes.country_code)}](## "${countryName(
+            event.attributes.country_code
+          )}")`
         : '',
       Language: event.attributes.language ? event.attributes.language : ''
     })

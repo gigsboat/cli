@@ -32,7 +32,7 @@ exports[`process events images 1`] = `
 
 | Date | Event | Title | Slides | Recording | Location | Language |
 | ---- | ----- | ----- | ------ | --------- | -------- | -------- |
-| 2016-1-1 | name | title | [Slides](https://example.com) | [Recording](https://example.com) | US |  |
+| 2016-1-1 | name | title | [Slides](https://example.com) | [Recording](https://example.com) | [🇺🇸](## \\"United States\\") |  |
 
 
 # 2017
@@ -45,7 +45,7 @@ exports[`process events images 1`] = `
 
 | Date | Event | Title | Slides | Recording | Location | Language |
 | ---- | ----- | ----- | ------ | --------- | -------- | -------- |
-| 2017-1-1 | name | title | [Slides](https://example.com) | [Recording](https://example.com) | US |  |
+| 2017-1-1 | name | title | [Slides](https://example.com) | [Recording](https://example.com) | [🇺🇸](## \\"United States\\") |  |
 
 
 # 2021
@@ -65,7 +65,7 @@ exports[`process events images 1`] = `
 | Date | Event | Title | Slides | Recording | Location | Language |
 | ---- | ----- | ----- | ------ | --------- | -------- | -------- |
 | 2021-2-1 | name | title | [Slides](https://example.com) |  |  | English |
-| 2021-2-2 | name | title |  | [Recording](https://example.com) | US | English |
+| 2021-2-2 | name | title |  | [Recording](https://example.com) | [🇺🇸](## \\"United States\\") | English |
 
 
 "
@@ -86,7 +86,7 @@ exports[`process events json data to provide a complete markdown document 1`] = 
 
 | Date | Event | Title | Slides | Recording | Location | Language |
 | ---- | ----- | ----- | ------ | --------- | -------- | -------- |
-| 2016-1-1 | name | title | [Slides](https://example.com) | [Recording](https://example.com) | US |  |
+| 2016-1-1 | name | title | [Slides](https://example.com) | [Recording](https://example.com) | [🇺🇸](## \\"United States\\") |  |
 
 
 # 2021
@@ -98,13 +98,13 @@ exports[`process events json data to provide a complete markdown document 1`] = 
 | Date | Event | Title | Slides | Recording | Location | Language |
 | ---- | ----- | ----- | ------ | --------- | -------- | -------- |
 | 2021-2-1 | name | title | [Slides](https://example.com) |  |  | English |
-| 2021-2-2 | name | title |  | [Recording](https://example.com) | US | English |
-| 2021-2-2 | name | title |  | [Recording](https://example.com) | US | English |
-| 2021-2-2 | name | title |  | [Recording](https://example.com) | US | English |
-| 2021-2-2 | name | title |  | [Recording](https://example.com) | US | English |
-| 2021-2-2 | name | title |  | [Recording](https://example.com) | US | English |
-| 2021-2-2 | name | title |  | [Recording](https://example.com) | US | English |
-| 2021-2-3 | name | title |  | [Recording](https://example.com) | US | English |
+| 2021-2-2 | name | title |  | [Recording](https://example.com) | [🇺🇸](## \\"United States\\") | English |
+| 2021-2-2 | name | title |  | [Recording](https://example.com) | [🇺🇸](## \\"United States\\") | English |
+| 2021-2-2 | name | title |  | [Recording](https://example.com) | [🇺🇸](## \\"United States\\") | English |
+| 2021-2-2 | name | title |  | [Recording](https://example.com) | [🇺🇸](## \\"United States\\") | English |
+| 2021-2-2 | name | title |  | [Recording](https://example.com) | [🇺🇸](## \\"United States\\") | English |
+| 2021-2-2 | name | title |  | [Recording](https://example.com) | [🇺🇸](## \\"United States\\") | English |
+| 2021-2-3 | name | title |  | [Recording](https://example.com) | [🇺🇸](## \\"United States\\") | English |
 
 
 "

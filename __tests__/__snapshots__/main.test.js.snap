@@ -18,9 +18,9 @@ exports[`given a directory of markdown files a full document is rendered 1`] = `
 
 | Date | Event | Title | Slides | Recording | Location | Language |
 | ---- | ----- | ----- | ------ | --------- | -------- | -------- |
-| 2021-7-21 | Cyber Week | [Are We Forever Doomed By Software Supply Chain Risks?](myapp/pages/2021/2021-07-21.md) |  | [Recording](https://www.youtube.com/watch?v=x74sMCaZKbg&ab_channel=Snyk) | IL | English |
-| 2021-6-13 | Cyber Week | [Are We Forever Doomed By Software Supply Chain Risks?](myapp/pages/2021/2021-06-13.md) |  | [Recording](https://www.youtube.com/watch?v=x74sMCaZKbg&ab_channel=Snyk) | IL | English |
-| 2021-1-1 | Cyber Week | [Are We Forever Doomed By Software Supply Chain Risks?](myapp/pages/2021/2021-01-01.md) |  | [Recording](https://www.youtube.com/watch?v=x74sMCaZKbg&ab_channel=Snyk) | IL | English |
+| 2021-7-21 | Cyber Week | [Are We Forever Doomed By Software Supply Chain Risks?](myapp/pages/2021/2021-07-21.md) |  | [Recording](https://www.youtube.com/watch?v=x74sMCaZKbg&ab_channel=Snyk) | [🇮🇱](## \\"Israel\\") | English |
+| 2021-6-13 | Cyber Week | [Are We Forever Doomed By Software Supply Chain Risks?](myapp/pages/2021/2021-06-13.md) |  | [Recording](https://www.youtube.com/watch?v=x74sMCaZKbg&ab_channel=Snyk) | [🇮🇱](## \\"Israel\\") | English |
+| 2021-1-1 | Cyber Week | [Are We Forever Doomed By Software Supply Chain Risks?](myapp/pages/2021/2021-01-01.md) |  | [Recording](https://www.youtube.com/watch?v=x74sMCaZKbg&ab_channel=Snyk) | [🇮🇱](## \\"Israel\\") | English |
 
 
 # 2019
@@ -31,9 +31,9 @@ exports[`given a directory of markdown files a full document is rendered 1`] = `
 
 | Date | Event | Title | Slides | Recording | Location | Language |
 | ---- | ----- | ----- | ------ | --------- | -------- | -------- |
-| 2019-9-27 | JSConf Budapest | [StrangerDanger: Finding Security Vulnerabilities Before They Find You!](myapp/pages/2019/2019-09-27.md) |  | [Recording](https://www.youtube.com/watch?v=3H8pF6yoSgU&list=PL37ZVnwpeshEMCvdYDdZ09Sy-toTftWu0&index=15&ab_channel=JSConf) | HU | English |
-| 2019-9-15 | JSConf Budapest | [StrangerDanger: Finding Security Vulnerabilities Before They Find You!](myapp/pages/2019/2019-09-15.md) |  | [Recording](https://www.youtube.com/watch?v=3H8pF6yoSgU&list=PL37ZVnwpeshEMCvdYDdZ09Sy-toTftWu0&index=15&ab_channel=JSConf) | HU | English |
-| 2019-9-12 | APIdays Barcelona | [Consumer-Driven Contracts: A better approach for API Testing](myapp/pages/2019/2019-09-12.md) | [Slides](https://slides.com/lirantal/consumer-driven-contracts) | [Recording](https://www.youtube.com/watch?v=zfGKX5iKSis&list=PLmEaqnTJ40Oqo9VlbcUakVmFZgx5weLrs&index=25&t=141s&ab_channel=apidays) | ES | English |
+| 2019-9-27 | JSConf Budapest | [StrangerDanger: Finding Security Vulnerabilities Before They Find You!](myapp/pages/2019/2019-09-27.md) |  | [Recording](https://www.youtube.com/watch?v=3H8pF6yoSgU&list=PL37ZVnwpeshEMCvdYDdZ09Sy-toTftWu0&index=15&ab_channel=JSConf) | [🇭🇺](## \\"Hungary\\") | English |
+| 2019-9-15 | JSConf Budapest | [StrangerDanger: Finding Security Vulnerabilities Before They Find You!](myapp/pages/2019/2019-09-15.md) |  | [Recording](https://www.youtube.com/watch?v=3H8pF6yoSgU&list=PL37ZVnwpeshEMCvdYDdZ09Sy-toTftWu0&index=15&ab_channel=JSConf) | [🇭🇺](## \\"Hungary\\") | English |
+| 2019-9-12 | APIdays Barcelona | [Consumer-Driven Contracts: A better approach for API Testing](myapp/pages/2019/2019-09-12.md) | [Slides](https://slides.com/lirantal/consumer-driven-contracts) | [Recording](https://www.youtube.com/watch?v=zfGKX5iKSis&list=PLmEaqnTJ40Oqo9VlbcUakVmFZgx5weLrs&index=25&t=141s&ab_channel=apidays) | [🇪🇸](## \\"Spain\\") | English |
 
 
 
@@ -63,9 +63,9 @@ Liran Tal
 
 | Date | Event | Title | Slides | Recording | Location | Language |
 | ---- | ----- | ----- | ------ | --------- | -------- | -------- |
-| 2021-7-21 | Cyber Week | [Are We Forever Doomed By Software Supply Chain Risks?](myapp/pages/2021/2021-07-21.md) |  | [Recording](https://www.youtube.com/watch?v=x74sMCaZKbg&ab_channel=Snyk) | IL | English |
-| 2021-6-13 | Cyber Week | [Are We Forever Doomed By Software Supply Chain Risks?](myapp/pages/2021/2021-06-13.md) |  | [Recording](https://www.youtube.com/watch?v=x74sMCaZKbg&ab_channel=Snyk) | IL | English |
-| 2021-1-1 | Cyber Week | [Are We Forever Doomed By Software Supply Chain Risks?](myapp/pages/2021/2021-01-01.md) |  | [Recording](https://www.youtube.com/watch?v=x74sMCaZKbg&ab_channel=Snyk) | IL | English |
+| 2021-7-21 | Cyber Week | [Are We Forever Doomed By Software Supply Chain Risks?](myapp/pages/2021/2021-07-21.md) |  | [Recording](https://www.youtube.com/watch?v=x74sMCaZKbg&ab_channel=Snyk) | [🇮🇱](## \\"Israel\\") | English |
+| 2021-6-13 | Cyber Week | [Are We Forever Doomed By Software Supply Chain Risks?](myapp/pages/2021/2021-06-13.md) |  | [Recording](https://www.youtube.com/watch?v=x74sMCaZKbg&ab_channel=Snyk) | [🇮🇱](## \\"Israel\\") | English |
+| 2021-1-1 | Cyber Week | [Are We Forever Doomed By Software Supply Chain Risks?](myapp/pages/2021/2021-01-01.md) |  | [Recording](https://www.youtube.com/watch?v=x74sMCaZKbg&ab_channel=Snyk) | [🇮🇱](## \\"Israel\\") | English |
 
 
 # 2019
@@ -76,9 +76,9 @@ Liran Tal
 
 | Date | Event | Title | Slides | Recording | Location | Language |
 | ---- | ----- | ----- | ------ | --------- | -------- | -------- |
-| 2019-9-27 | JSConf Budapest | [StrangerDanger: Finding Security Vulnerabilities Before They Find You!](myapp/pages/2019/2019-09-27.md) |  | [Recording](https://www.youtube.com/watch?v=3H8pF6yoSgU&list=PL37ZVnwpeshEMCvdYDdZ09Sy-toTftWu0&index=15&ab_channel=JSConf) | HU | English |
-| 2019-9-15 | JSConf Budapest | [StrangerDanger: Finding Security Vulnerabilities Before They Find You!](myapp/pages/2019/2019-09-15.md) |  | [Recording](https://www.youtube.com/watch?v=3H8pF6yoSgU&list=PL37ZVnwpeshEMCvdYDdZ09Sy-toTftWu0&index=15&ab_channel=JSConf) | HU | English |
-| 2019-9-12 | APIdays Barcelona | [Consumer-Driven Contracts: A better approach for API Testing](myapp/pages/2019/2019-09-12.md) | [Slides](https://slides.com/lirantal/consumer-driven-contracts) | [Recording](https://www.youtube.com/watch?v=zfGKX5iKSis&list=PLmEaqnTJ40Oqo9VlbcUakVmFZgx5weLrs&index=25&t=141s&ab_channel=apidays) | ES | English |
+| 2019-9-27 | JSConf Budapest | [StrangerDanger: Finding Security Vulnerabilities Before They Find You!](myapp/pages/2019/2019-09-27.md) |  | [Recording](https://www.youtube.com/watch?v=3H8pF6yoSgU&list=PL37ZVnwpeshEMCvdYDdZ09Sy-toTftWu0&index=15&ab_channel=JSConf) | [🇭🇺](## \\"Hungary\\") | English |
+| 2019-9-15 | JSConf Budapest | [StrangerDanger: Finding Security Vulnerabilities Before They Find You!](myapp/pages/2019/2019-09-15.md) |  | [Recording](https://www.youtube.com/watch?v=3H8pF6yoSgU&list=PL37ZVnwpeshEMCvdYDdZ09Sy-toTftWu0&index=15&ab_channel=JSConf) | [🇭🇺](## \\"Hungary\\") | English |
+| 2019-9-12 | APIdays Barcelona | [Consumer-Driven Contracts: A better approach for API Testing](myapp/pages/2019/2019-09-12.md) | [Slides](https://slides.com/lirantal/consumer-driven-contracts) | [Recording](https://www.youtube.com/watch?v=zfGKX5iKSis&list=PLmEaqnTJ40Oqo9VlbcUakVmFZgx5weLrs&index=25&t=141s&ab_channel=apidays) | [🇪🇸](## \\"Spain\\") | English |
 
 
 

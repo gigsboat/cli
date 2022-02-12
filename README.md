@@ -215,13 +215,18 @@ Use npm's built-in `npx` command to fetch, install, and run gigsboat with no con
 npx @gigsboat/cli
 ```
 
-## Deploying to github pages
+## Deploying to GitHub Pages
+
 It is possible to deploy the generated README.md file to github pages. All that is needed, is to enable github-pages in the repository's *settings* > *pages*, as is described in the [github pages docs](https://docs.github.com/en/pages/quickstart#creating-your-website), starting from _step 3_. 
 
 To access the generated site visit
 `https://<username-or-org>.github.io/<template-repo-name>`
 
 To select a different theme than the default or to customise it, add a __config.yml_ file and include `theme: jekyll-theme-minimal`. From the same __config.yml_ file, it's also possible to set a `title` and `description` for the gerated html. For more details on theme customisation follow the steps described in [adding a theme to your jekyll site](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll).
+
+## Generating a static site
+
+You can use several static site generators to output an html from the generated README.md file. Using jekyll, is great if you want to deploy to github pages. But if you're looking to deploy somewhere else, you might want to use a different tool like [11ty](https://www.11ty.dev/). We have created a guide in [GENERATE_11ty_STATIC_SITE.md](GENERATE_11ty_STATIC_SITE.md) to get you started.
 
 # Contributing
 
