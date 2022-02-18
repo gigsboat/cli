@@ -24,7 +24,7 @@
 1. Create a directory `gigsboat-eleventy-starter` where your 11ty starter files will live
 1. In the `gigsboat-eleventy-starter` directory create a file `index.json` and declare your layout file name
 `{ "layout": "gigsboat-layout" }`
-1. Create a file `` and add some basic css
+1. Create a file `styles.css` and add some basic css
     ```
     :root {
         --nightrider-gray: #333;
