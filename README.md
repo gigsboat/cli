@@ -37,7 +37,7 @@ Here is how [I'm doing it](https://github.com/lirantal/public-speaking):
 - Enjoy doing conference talks, meetups presentations, or joining a podcast?
 - Do you have a boatload of speaking gigs? 
 
-Gigsboat is for you becasue:
+Gigsboat is for you because:
 - It is difficult for you to keep track of all of your gigs
 - You want some stats and hard cold data for all of your speaking engagements
 
