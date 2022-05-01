@@ -1,0 +1,6 @@
+*   @lirantal
+src/utils/content-manager.js    @gep13
+src/utils/md-formatter.js       @gep13
+__tests__/md-formatter.test.js  @gep13
+__tests__/__snapshots__/md-formatter.test.*   @gep13
+bin/config-manager.js   @gep13
