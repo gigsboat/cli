@@ -24,7 +24,6 @@ body:
       label: Actual Behavior
       description: What actually happened?
       placeholder: Paste any screenshots that are helpful, but becareful about exposing sensitive information
-      value: ""
     validations:
       required: true
   - type: textarea
@@ -36,6 +35,7 @@ body:
         1. npm install cli
         2. ...
         3. ...
+    render: markdown
     validations:
       required: true
   - type: textarea
