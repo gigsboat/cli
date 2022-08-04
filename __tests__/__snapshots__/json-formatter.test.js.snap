@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`given a directory of markdown files a full document is rendered 1`] = `
+exports[`given a directory of markdown files ensure the JSON output is created 1`] = `
 Object {
   "generatedAt": "2022-12-14T00:00:00.000Z",
   "items": Array [
