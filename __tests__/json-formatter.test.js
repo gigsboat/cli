@@ -19,5 +19,5 @@ test('given a directory of markdown files a full document is rendered', async ()
 
   const jsonStringData = await readFile(path.join('README.json'), 'utf8')
   const jsonResult = JSON.parse(jsonStringData)
-  expect(jsonStringData).toMatchSnapshot()
+  expect(jsonResult).toMatchSnapshot()
 })
