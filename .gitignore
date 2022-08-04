@@ -84,3 +84,6 @@ typings/
 
 # Developing on a Mac
 .DS_Store
+
+# Project files
+README.json
