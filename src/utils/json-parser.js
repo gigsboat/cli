@@ -1,28 +1,20 @@
 export async function getJsonFormat({gigsData}) {
-    let totalEventsData = {}
-
-    const dataByYear = formatJson(gigsData)
-    totalEventsData.byYear = dataByYear;
-    totalEventsData.stats = gigsData.stats;
-      
+    const totalEventsData = formatJson(gigsData)      
     return totalEventsData
 }
 
 function formatJson(gigsData) {
-    let dataByYear = {}
+    let data = {}
+    data.items = []
     
-    dataByYear = gigsData.bucketsByYear.map((yearlyEntries) => {
+    for (const yearlyEntries of gigsData.bucketsByYear) {
 
-        let yearlyItems = []
         for (const yearlyItem of yearlyEntries.items) {
-            yearlyItems.push(yearlyItem.attributes)
+            data.items.push(yearlyItem.attributes)
         }
+    }
 
-        return {
-            year: yearlyEntries.year,
-            items: yearlyItems
-        }
-    })    
+    data.stats = gigsData.stats
 
-    return dataByYear
+    return data
 }
