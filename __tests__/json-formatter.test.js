@@ -13,7 +13,7 @@ beforeEach(() => {
 
 afterAll(() => jest.useRealTimers())
 
-test('given a directory of markdown files a full document is rendered', async () => {
+test('given a directory of markdown files ensure the JSON output is created', async () => {
   const filePath = path.join(__dirname, './__fixtures__/main-datafiles')
   await generateDocument({ sourceDirectory: filePath })
 
