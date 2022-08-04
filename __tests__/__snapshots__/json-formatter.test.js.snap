@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`given a directory of markdown files ensure the JSON output is created 1`] = `
+Object {
+  "generatedAt": "2022-12-14T00:00:00.000Z",
+  "items": Array [
+    Object {
+      "city": "Tel Aviv",
+      "country": "Israel",
+      "country_code": "IL",
+      "date": "2021-07-21T00:00:00.000Z",
+      "image_header": null,
+      "images": Array [
+        null,
+      ],
+      "language": "English",
+      "name": "Cyber Week",
+      "recognitions": Object {
+        "twitter": Array [
+          "https://twitter.com/liran_tal/status/1417874639859109894",
+        ],
+      },
+      "recording_url": "https://www.youtube.com/watch?v=x74sMCaZKbg&ab_channel=Snyk",
+      "slides_url": null,
+      "tags": "post",
+      "title": "Are We Forever Doomed By Software Supply Chain Risks?",
+      "type": "conference",
+      "url": "https://cw2021.b2b-wizard.com/expo",
+    },
+    Object {
+      "city": "Tel Aviv",
+      "country": "Israel",
+      "country_code": "IL",
+      "date": "2021-06-13T00:00:00.000Z",
+      "image_header": null,
+      "images": Array [
+        null,
+      ],
+      "language": "English",
+      "name": "Cyber Week",
+      "recognitions": Object {
+        "twitter": Array [
+          "https://twitter.com/liran_tal/status/1417874639859109894",
+        ],
+      },
+      "recording_url": "https://www.youtube.com/watch?v=x74sMCaZKbg&ab_channel=Snyk",
+      "slides_url": null,
+      "tags": "post",
+      "title": "Are We Forever Doomed By Software Supply Chain Risks?",
+      "type": "article",
+      "url": "https://cw2021.b2b-wizard.com/expo",
+    },
+    Object {
+      "city": "Tel Aviv",
+      "country": "Israel",
+      "country_code": "IL",
+      "date": "2021-01-01T00:00:00.000Z",
+      "image_header": null,
+      "images": Array [
+        null,
+      ],
+      "language": "English",
+      "name": "Cyber Week",
+      "recognitions": Object {
+        "twitter": Array [
+          "https://twitter.com/liran_tal/status/1417874639859109894",
+        ],
+      },
+      "recording_url": "https://www.youtube.com/watch?v=x74sMCaZKbg&ab_channel=Snyk",
+      "slides_url": null,
+      "tags": "post",
+      "title": "Are We Forever Doomed By Software Supply Chain Risks?",
+      "type": "other",
+      "url": "https://cw2021.b2b-wizard.com/expo",
+    },
+    Object {
+      "city": "Budapest",
+      "country": "Hungary",
+      "country_code": "HU",
+      "date": "2019-09-27T00:00:00.000Z",
+      "image_header": "https://pbs.twimg.com/media/EFeULhIW4AARwZa?format=jpg&name=large",
+      "images": Array [
+        "https://pbs.twimg.com/media/EFeULhIW4AARwZa?format=jpg&name=large",
+      ],
+      "language": "English",
+      "name": "JSConf Budapest",
+      "recognitions": Object {
+        "twitter": Array [
+          "https://twitter.com/panay_georgiou/status/1177572765664194560",
+        ],
+      },
+      "recording_url": "https://www.youtube.com/watch?v=3H8pF6yoSgU&list=PL37ZVnwpeshEMCvdYDdZ09Sy-toTftWu0&index=15&ab_channel=JSConf",
+      "slides_url": null,
+      "tags": "post",
+      "title": "StrangerDanger: Finding Security Vulnerabilities Before They Find You!",
+      "type": "meetup",
+      "url": "https://2019.jsconfbp.com/",
+    },
+    Object {
+      "city": "Budapest",
+      "country": "Hungary",
+      "country_code": "HU",
+      "date": "2019-09-15T00:00:00.000Z",
+      "image_header": "https://pbs.twimg.com/media/EFeULhIW4AARwZa?format=jpg&name=large",
+      "images": Array [
+        "https://pbs.twimg.com/media/EFeULhIW4AARwZa?format=jpg&name=large",
+      ],
+      "language": "English",
+      "name": "JSConf Budapest",
+      "recognitions": Object {
+        "twitter": Array [
+          "https://twitter.com/panay_georgiou/status/1177572765664194560",
+        ],
+      },
+      "recording_url": "https://www.youtube.com/watch?v=3H8pF6yoSgU&list=PL37ZVnwpeshEMCvdYDdZ09Sy-toTftWu0&index=15&ab_channel=JSConf",
+      "slides_url": null,
+      "tags": "post",
+      "title": "StrangerDanger: Finding Security Vulnerabilities Before They Find You!",
+      "type": "podcast",
+      "url": "https://2019.jsconfbp.com/",
+    },
+    Object {
+      "city": "Barcelona",
+      "country": "Spain",
+      "country_code": "ES",
+      "date": "2019-09-12T00:00:00.000Z",
+      "image_header": "https://pbs.twimg.com/media/EEQPqXlXUAEoafi?format=jpg&name=large",
+      "images": Array [
+        "https://pbs.twimg.com/media/EEQPqXlXUAEoafi?format=jpg&name=large",
+        "https://pbs.twimg.com/media/ECJ2Zv6WsAEPUFF?format=jpg&name=large",
+      ],
+      "language": "English",
+      "name": "APIdays Barcelona",
+      "recognitions": Object {
+        "twitter": Array [
+          "https://twitter.com/anyulled/status/1172079037189152768",
+          "https://twitter.com/APIdaysGlobal/status/1162621839933358080",
+          "https://twitter.com/liran_tal/status/1173942213086076928",
+          "https://twitter.com/liran_tal/status/1199047628530556931",
+          "https://twitter.com/snyksec/status/1172033103528898561",
+        ],
+      },
+      "recording_url": "https://www.youtube.com/watch?v=zfGKX5iKSis&list=PLmEaqnTJ40Oqo9VlbcUakVmFZgx5weLrs&index=25&t=141s&ab_channel=apidays",
+      "slides_url": "https://slides.com/lirantal/consumer-driven-contracts",
+      "tags": "post",
+      "title": "Consumer-Driven Contracts: A better approach for API Testing",
+      "type": "webinar",
+      "url": "https://www.apidays.co/barcelona2019/",
+    },
+  ],
+  "stats": Object {
+    "total": 6,
+    "total_article": 1,
+    "total_conference": 1,
+    "total_meetup": 1,
+    "total_other": 1,
+    "total_podcast": 1,
+    "total_webinar": 1,
+    "total_workshop": 0,
+  },
+}
+`;

@@ -9,6 +9,8 @@ import {
   getStatsBadges
 } from './utils/md-formatter.js'
 import { createYearBuckets, getEventsStats } from './utils/content-manager.js'
+import { getJsonFormat } from './utils/json-parser.js'
+import { writeFile } from 'fs/promises'
 
 export { formatToMarkdown, generateGigs, generateDocument }
 
@@ -20,6 +22,10 @@ async function generateDocument({ sourceDirectory, preContent, postContent }) {
   const { entriesForYearMarkdown, entriesByBucket } = await generateGigs({
     sourceDirectory
   })
+
+  const gigsJsonData = await getJsonFormat({gigsData: entriesByBucket})
+  gigsJsonData.generatedAt = new Date().toISOString()
+  await writeFile('README.json', JSON.stringify(gigsJsonData, null, 2))
 
   if (preContent) {
     markdownOutputPreContent = processCustomContent({
