@@ -38,7 +38,9 @@ exports[`given a directory of markdown files a full document is rendered 1`] = `
 
 
 
-<i>Updated on 2021-12-14T00:00:00.000Z</i>"
+*page updated on 2021-12-14T00:00:00.000Z*
+
+powered by [gigsboat/cli](https://github.com/gigsboat/cli)"
 `;
 
 exports[`given a directory of markdown files a full document is rendered along with pre and post content 1`] = `
@@ -87,5 +89,7 @@ Liran Tal
 Thank you!
 
 
-<i>Updated on 2021-12-14T00:00:00.000Z</i>"
+*page updated on 2021-12-14T00:00:00.000Z*
+
+powered by [gigsboat/cli](https://github.com/gigsboat/cli)"
 `;

@@ -45,7 +45,9 @@ async function generateDocument({ sourceDirectory, preContent, postContent }) {
   `
 
   const currentDate = new Date().toISOString()
-  const footer = `<i>Updated on ${currentDate}</i>`
+  let footer = ''
+  footer += `*page updated on ${currentDate}*\n\n`
+  footer += `powered by [gigsboat/cli](https://github.com/gigsboat/cli)`
 
   document +=
     statsHeader +
