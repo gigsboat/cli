@@ -18,8 +18,6 @@ const configFromCliArgs = {
 }
 let gigsConfig = await getConfig(configFromCliArgs)
 
-console.log(gigsConfig)
-
 const document = await generateDocument({
   sourceDirectory: gigsConfig.input.sourceDirectory,
   preContent: gigsConfig.preContent,
