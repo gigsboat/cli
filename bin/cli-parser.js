@@ -1,5 +1,8 @@
 import yargs from 'yargs'
+import DebugClass from 'debug'
 import { hideBin } from 'yargs/helpers'
+
+const debug = DebugClass('gigs:cli')
 
 export function parseCliArgs() {
   // supporting right now:
@@ -20,5 +23,6 @@ export function parseCliArgs() {
     })
     .parse()
 
+  debug('processed cli args: ' + JSON.stringify(cliOptions))
   return cliOptions
 }
