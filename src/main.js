@@ -23,7 +23,7 @@ async function generateDocument({ sourceDirectory, preContent, postContent }) {
     sourceDirectory
   })
 
-  const gigsJsonData = await getJsonFormat({gigsData: entriesByBucket})
+  const gigsJsonData = await getJsonFormat({ gigsData: entriesByBucket })
   gigsJsonData.generatedAt = new Date().toISOString()
   await writeFile('README.json', JSON.stringify(gigsJsonData, null, 2))
 
