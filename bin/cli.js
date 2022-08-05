@@ -5,12 +5,20 @@ import { processOutput } from './output-handler.js'
 import { generateDocument } from '../src/main.js'
 
 const cliArgs = parseCliArgs()
-let gigsConfig = await getConfig()
 
 // command line arguments always override config file
 // in order of precedence, and so:
-gigsConfig.input.sourceDirectory = cliArgs.sourceDirectory
-gigsConfig.output.markdownFile = cliArgs.outputFile
+const configFromCliArgs = {
+  input: {
+    sourceDirectory: cliArgs.sourceDirectory
+  },
+  output: {
+    markdownFile: cliArgs.outputFile
+  }
+}
+let gigsConfig = await getConfig(configFromCliArgs)
+
+console.log(gigsConfig)
 
 const document = await generateDocument({
   sourceDirectory: gigsConfig.input.sourceDirectory,
