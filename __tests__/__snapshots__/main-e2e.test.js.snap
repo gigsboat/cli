@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`spawn the cli to process data and ensure markdown file is generated correctly 1`] = `
+"<div align='center'><p><img src=\\"https://img.shields.io/badge/total-6-blue?style=flat-square\\" alt=\\"Total Events\\"> <img src=\\"https://img.shields.io/badge/meetups-1-violet?style=flat-square\\" alt=\\"Total Meetups\\"> <img src=\\"https://img.shields.io/badge/conferences-1-red?style=flat-square\\" alt=\\"Total Conferences\\"> <img src=\\"https://img.shields.io/badge/podcasts-1-yellow?style=flat-square\\" alt=\\"Total Podcasts\\"> <img src=\\"https://img.shields.io/badge/webinars-1-lightgrey?style=flat-square\\" alt=\\"Total Webinars\\"> <img src=\\"https://img.shields.io/badge/articles-1-green?style=flat-square\\" alt=\\"Total Podcasts\\"> </p>
+</div>
+  
+# Table of Contents
+
+
+ - [Year of 2021](#2021) - total events 3
+ - [Year of 2019](#2019) - total events 3
+
+# 2021
+
+
+![Total Events](https://img.shields.io/badge/total-3-blue?style=flat-square)  ![Total Conferences](https://img.shields.io/badge/conferences-1-red?style=flat-square)   ![Total Podcasts](https://img.shields.io/badge/articles-1-green?style=flat-square) 
+
+
+
+
+| Date | Event | Title | Slides | Recording | Location | Language |
+| ---- | ----- | ----- | ------ | --------- | -------- | -------- |
+| 2021-7-21 | Cyber Week | [Are We Forever Doomed By Software Supply Chain Risks?](2021/2021-07-21.md) |  | [Recording](https://www.youtube.com/watch?v=x74sMCaZKbg&ab_channel=Snyk) | [🇮🇱](## \\"Israel\\") | English |
+| 2021-6-13 | Cyber Week | [Are We Forever Doomed By Software Supply Chain Risks?](2021/2021-06-13.md) |  | [Recording](https://www.youtube.com/watch?v=x74sMCaZKbg&ab_channel=Snyk) | [🇮🇱](## \\"Israel\\") | English |
+| 2021-1-1 | Cyber Week | [Are We Forever Doomed By Software Supply Chain Risks?](2021/2021-01-01.md) |  | [Recording](https://www.youtube.com/watch?v=x74sMCaZKbg&ab_channel=Snyk) | [🇮🇱](## \\"Israel\\") | English |
+
+
+# 2019
+
+
+![Total Events](https://img.shields.io/badge/total-3-blue?style=flat-square) ![Total Meetups](https://img.shields.io/badge/meetups-1-violet?style=flat-square)  ![Total Podcasts](https://img.shields.io/badge/podcasts-1-yellow?style=flat-square) ![Total Webinars](https://img.shields.io/badge/webinars-1-lightgrey?style=flat-square)  
+
+
+<table>
+  <tr>
+    <td align=\\"center\\"> <img src=\\"https://pbs.twimg.com/media/EFeULhIW4AARwZa?format=jpg&name=large\\" width=\\"85\\" height=\\"50\\" /> </td>
+    <td align=\\"center\\"> <img src=\\"https://pbs.twimg.com/media/EFeULhIW4AARwZa?format=jpg&name=large\\" width=\\"85\\" height=\\"50\\" /> </td>
+    <td align=\\"center\\"> <img src=\\"https://pbs.twimg.com/media/EEQPqXlXUAEoafi?format=jpg&name=large\\" width=\\"85\\" height=\\"50\\" /> </td>
+    <td align=\\"center\\"> <img src=\\"https://pbs.twimg.com/media/ECJ2Zv6WsAEPUFF?format=jpg&name=large\\" width=\\"85\\" height=\\"50\\" /> </td>
+  </tr>
+</table>
+
+
+| Date | Event | Title | Slides | Recording | Location | Language |
+| ---- | ----- | ----- | ------ | --------- | -------- | -------- |
+| 2019-9-27 | JSConf Budapest | [StrangerDanger: Finding Security Vulnerabilities Before They Find You!](2019/2019-09-27.md) |  | [Recording](https://www.youtube.com/watch?v=3H8pF6yoSgU&list=PL37ZVnwpeshEMCvdYDdZ09Sy-toTftWu0&index=15&ab_channel=JSConf) | [🇭🇺](## \\"Hungary\\") | English |
+| 2019-9-15 | JSConf Budapest | [StrangerDanger: Finding Security Vulnerabilities Before They Find You!](2019/2019-09-15.md) |  | [Recording](https://www.youtube.com/watch?v=3H8pF6yoSgU&list=PL37ZVnwpeshEMCvdYDdZ09Sy-toTftWu0&index=15&ab_channel=JSConf) | [🇭🇺](## \\"Hungary\\") | English |
+| 2019-9-12 | APIdays Barcelona | [Consumer-Driven Contracts: A better approach for API Testing](2019/2019-09-12.md) | [Slides](https://slides.com/lirantal/consumer-driven-contracts) | [Recording](https://www.youtube.com/watch?v=zfGKX5iKSis&list=PLmEaqnTJ40Oqo9VlbcUakVmFZgx5weLrs&index=25&t=141s&ab_channel=apidays) | [🇪🇸](## \\"Spain\\") | English |
+
+
+
+
+powered by [gigsboat/cli](https://github.com/gigsboat/cli)"
+`;

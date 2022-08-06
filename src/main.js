@@ -49,7 +49,9 @@ async function generateDocument({ sourceDirectory, preContent, postContent }) {
 
   const currentDate = new Date().toISOString()
   let footer = ''
-  footer += `*page updated on ${currentDate}*\n\n`
+  if (!process.env.TEST_E2E) {
+    footer += `*page updated on ${currentDate}*\n\n`
+  }
   footer += `powered by [gigsboat/cli](https://github.com/gigsboat/cli)`
 
   document +=
