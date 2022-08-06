@@ -1,8 +1,8 @@
 import yargs from 'yargs'
-import DebugClass from 'debug'
+import DebugLogger from 'debug'
 import { hideBin } from 'yargs/helpers'
 
-const debug = DebugClass('gigs:cli')
+const debug = DebugLogger('gigsboat:cli')
 
 export function parseCliArgs() {
   // supporting right now:
