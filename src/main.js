@@ -1,5 +1,6 @@
 import path from 'path'
 import marked from 'marked'
+import DebugLogger from 'debug'
 
 import { getAllFiles } from './utils/fs.js'
 import { convertToJson } from './utils/yaml-parser.js'
@@ -13,6 +14,8 @@ import { getJsonFormat } from './utils/json-parser.js'
 import { writeFile } from 'fs/promises'
 
 export { formatToMarkdown, generateGigs, generateDocument }
+
+const debug = DebugLogger('gigsboat:app')
 
 async function generateDocument({ sourceDirectory, preContent, postContent }) {
   let markdownOutputPreContent = ''
@@ -80,6 +83,7 @@ function processCustomContent({ contents }) {
 async function generateGigs({ sourceDirectory }) {
   let directoryPath = path.join(process.cwd(), sourceDirectory)
   if (path.isAbsolute(sourceDirectory)) {
+    debug('detected absolute path for source directory')
     directoryPath = sourceDirectory
   }
 
