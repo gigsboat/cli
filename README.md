@@ -205,6 +205,27 @@ A complete example of this configuration file:
 }
 ```
 
+### Gigsboat CLI arguments
+
+You can provide the gigsboat CLI with arguments to control the behaviour of the CLI.
+
+Run the CLI with the `--help` argument to see a list of available arguments:
+
+```sh
+Options:
+      --help              Show help                                    [boolean]
+      --version           Show version number                          [boolean]
+  -o, --output-file                     [string] [default: "README-gigsfile.md"]
+  -s, --source-directory                             [string] [default: "pages"]
+```
+
+As such, you can control the source file directory and the output file name, 
+for example:
+
+```sh
+npx gigsboat -s ~/myProject/data/pages -o README-gigs.md
+```
+
 ## I already track events via YAML / Markdown
 
 Use the `gigsboat` CLI to manage them all!
