@@ -6,7 +6,9 @@ import { generateDocument } from '../src/main.js'
 import DebugLogger from 'debug'
 
 const debug = DebugLogger('gigsboat:app')
-// DebugLogger.enable('gigsboat:app')
+if (!DebugLogger.enabled('gigsboat:app')) {
+  DebugLogger.enable('gigsboat:app')
+}
 
 async function init() {
   const cliArgs = parseCliArgs()
