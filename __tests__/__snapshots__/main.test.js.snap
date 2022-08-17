@@ -16,6 +16,8 @@ exports[`given a directory of markdown files a full document is rendered 1`] = `
 ![Total Events](https://img.shields.io/badge/total-3-blue?style=flat-square)  ![Total Conferences](https://img.shields.io/badge/conferences-1-red?style=flat-square)   ![Total Podcasts](https://img.shields.io/badge/articles-1-green?style=flat-square) 
 
 
+
+
 | Date | Event | Title | Slides | Recording | Location | Language |
 | ---- | ----- | ----- | ------ | --------- | -------- | -------- |
 | 2021-7-21 | Cyber Week | [Are We Forever Doomed By Software Supply Chain Risks?](myapp/pages/2021/2021-07-21.md) |  | [Recording](https://www.youtube.com/watch?v=x74sMCaZKbg&ab_channel=Snyk) | [🇮🇱](## \\"Israel\\") | English |
@@ -27,6 +29,16 @@ exports[`given a directory of markdown files a full document is rendered 1`] = `
 
 
 ![Total Events](https://img.shields.io/badge/total-3-blue?style=flat-square) ![Total Meetups](https://img.shields.io/badge/meetups-1-violet?style=flat-square)  ![Total Podcasts](https://img.shields.io/badge/podcasts-1-yellow?style=flat-square) ![Total Webinars](https://img.shields.io/badge/webinars-1-lightgrey?style=flat-square)  
+
+
+<table>
+  <tr>
+    <td align=\\"center\\"> <img src=\\"https://pbs.twimg.com/media/EFeULhIW4AARwZa?format=jpg&name=large\\" width=\\"85\\" height=\\"50\\" /> </td>
+    <td align=\\"center\\"> <img src=\\"https://pbs.twimg.com/media/EFeULhIW4AARwZa?format=jpg&name=large\\" width=\\"85\\" height=\\"50\\" /> </td>
+    <td align=\\"center\\"> <img src=\\"https://pbs.twimg.com/media/EEQPqXlXUAEoafi?format=jpg&name=large\\" width=\\"85\\" height=\\"50\\" /> </td>
+    <td align=\\"center\\"> <img src=\\"https://pbs.twimg.com/media/ECJ2Zv6WsAEPUFF?format=jpg&name=large\\" width=\\"85\\" height=\\"50\\" /> </td>
+  </tr>
+</table>
 
 
 | Date | Event | Title | Slides | Recording | Location | Language |
@@ -63,6 +75,8 @@ Liran Tal
 ![Total Events](https://img.shields.io/badge/total-3-blue?style=flat-square)  ![Total Conferences](https://img.shields.io/badge/conferences-1-red?style=flat-square)   ![Total Podcasts](https://img.shields.io/badge/articles-1-green?style=flat-square) 
 
 
+
+
 | Date | Event | Title | Slides | Recording | Location | Language |
 | ---- | ----- | ----- | ------ | --------- | -------- | -------- |
 | 2021-7-21 | Cyber Week | [Are We Forever Doomed By Software Supply Chain Risks?](myapp/pages/2021/2021-07-21.md) |  | [Recording](https://www.youtube.com/watch?v=x74sMCaZKbg&ab_channel=Snyk) | [🇮🇱](## \\"Israel\\") | English |
@@ -74,6 +88,16 @@ Liran Tal
 
 
 ![Total Events](https://img.shields.io/badge/total-3-blue?style=flat-square) ![Total Meetups](https://img.shields.io/badge/meetups-1-violet?style=flat-square)  ![Total Podcasts](https://img.shields.io/badge/podcasts-1-yellow?style=flat-square) ![Total Webinars](https://img.shields.io/badge/webinars-1-lightgrey?style=flat-square)  
+
+
+<table>
+  <tr>
+    <td align=\\"center\\"> <img src=\\"https://pbs.twimg.com/media/EFeULhIW4AARwZa?format=jpg&name=large\\" width=\\"85\\" height=\\"50\\" /> </td>
+    <td align=\\"center\\"> <img src=\\"https://pbs.twimg.com/media/EFeULhIW4AARwZa?format=jpg&name=large\\" width=\\"85\\" height=\\"50\\" /> </td>
+    <td align=\\"center\\"> <img src=\\"https://pbs.twimg.com/media/EEQPqXlXUAEoafi?format=jpg&name=large\\" width=\\"85\\" height=\\"50\\" /> </td>
+    <td align=\\"center\\"> <img src=\\"https://pbs.twimg.com/media/ECJ2Zv6WsAEPUFF?format=jpg&name=large\\" width=\\"85\\" height=\\"50\\" /> </td>
+  </tr>
+</table>
 
 
 | Date | Event | Title | Slides | Recording | Location | Language |

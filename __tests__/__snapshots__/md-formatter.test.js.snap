@@ -84,6 +84,8 @@ exports[`process events json data to provide a complete markdown document 1`] = 
 ![Total Events](https://img.shields.io/badge/total-1-blue?style=flat-square)      
 
 
+
+
 | Date | Event | Title | Slides | Recording | Location | Language |
 | ---- | ----- | ----- | ------ | --------- | -------- | -------- |
 | 2016-1-1 | name | title | [Slides](https://example.com) | [Recording](https://example.com) | [🇺🇸](## \\"United States\\") |  |
@@ -93,6 +95,8 @@ exports[`process events json data to provide a complete markdown document 1`] = 
 
 
 ![Total Events](https://img.shields.io/badge/total-8-blue?style=flat-square) ![Total Meetups](https://img.shields.io/badge/meetups-1-violet?style=flat-square) ![Total Conferences](https://img.shields.io/badge/conferences-1-red?style=flat-square) ![Total Podcasts](https://img.shields.io/badge/podcasts-1-yellow?style=flat-square) ![Total Webinars](https://img.shields.io/badge/webinars-2-lightgrey?style=flat-square) ![Total Podcasts](https://img.shields.io/badge/articles-1-green?style=flat-square) ![Total Workshops](https://img.shields.io/badge/workshops-2-orange?style=flat-square)
+
+
 
 
 | Date | Event | Title | Slides | Recording | Location | Language |

@@ -19,7 +19,7 @@ export async function getConfig(providedConfig) {
     gigsConfig = providedConfig
   } else {
     try {
-      debug('reading config from file: %s', configFileName)
+      debug('opening config file for reading: %s', configFileName)
       const jsonConfigFileContents = await fs.readFile(
         path.join(__dirname, configFileName),
         'utf8'
@@ -32,11 +32,16 @@ export async function getConfig(providedConfig) {
     }
   }
 
-  validateConfig(gigsConfig)
+  gigsConfig = validateConfig(gigsConfig)
   return gigsConfig
 }
 
 function validateConfig(config) {
+  if (!config) {
+    debug('config is empty so falling back to defaults')
+    config = {}
+  }
+
   const gigsConfigSchema = {
     type: 'object',
     properties: {
@@ -80,6 +85,7 @@ function validateConfig(config) {
 
   const schemaValidator = new ajv({ useDefaults: true })
   const schemaValidation = schemaValidator.compile(gigsConfigSchema)
-  schemaValidation(config)
+  const isValid = schemaValidation(config)
+  debug('is configuration schema valid: %s', isValid)
   return config
 }
