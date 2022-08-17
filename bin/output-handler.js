@@ -6,7 +6,6 @@ const debug = DebugLogger('gigsboat:app')
 
 export async function processOutput({ document, outputFile }) {
   if (outputFile) {
-
     if (path.isAbsolute(outputFile)) {
       debug('detected absolute path for output file')
     } else {

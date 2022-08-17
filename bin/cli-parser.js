@@ -12,13 +12,11 @@ export function parseCliArgs() {
     .options({
       o: {
         alias: 'output-file',
-        type: 'string',
-        default: 'README-gigsfile.md'
+        type: 'string'
       },
       s: {
         alias: 'source-directory',
-        type: 'string',
-        default: 'pages'
+        type: 'string'
       }
     })
     .parse()
